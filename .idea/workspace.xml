@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9db5220-cdd9-4ef6-8fe9-1f01600bb8f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/coronavirus-scrapper-api-2020-03-19.0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/expected-return.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/components.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/components/config.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/components/database.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/components/pedestal.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/components/routes.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/components/schema.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/postgresql.clj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/routes.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__cheshire_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clj_time_0_14_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_9_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__commons_fileupload_1_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__joda_time_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_codec_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_core_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__tigris_0_1_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coronavirus-scrapper-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/coronavirus-scrapper-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coronavirus_scrapper_api/server.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/server.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coronavirus_scrapper_api/service.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/service.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coronavirus_scrapper_api/postgresql.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/postgresql.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
