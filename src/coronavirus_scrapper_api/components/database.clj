@@ -1,6 +1,5 @@
 (ns coronavirus-scrapper-api.components.database
   (:require [com.stuartsierra.component :as component]
-            [clojure.java :as jdbc]
             [hikari-cp.core :as hikari]))
 
 (def datasource-prod {

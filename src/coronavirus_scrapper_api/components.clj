@@ -5,6 +5,7 @@
             [coronavirus-scrapper-api.components.pedestal :as pedestal]
             [coronavirus-scrapper-api.components.routes :as routes]
             [coronavirus-scrapper-api.components.schema :as schema]
+            [coronavirus-scrapper-api.components.servlet :as servlet]
             [coronavirus-scrapper-api.routes]))
 
 (def prod-config-map {:env  :prod
@@ -13,14 +14,16 @@
 (def dev-config-map {:env  :dev
                      :port 8080})
 
+(def deps [:config :database :routes :schema])
+
 (defn prod-components [config-map]
   (component/system-map
     :config (config/new-config config-map)
-    :database (component/using (database/new-database) :config)
+    :database (component/using (database/new-database) [:config])
     :schema (schema/new-schema)
-    :routes (routes/new-route #'coronavirus-scrapper-api.routes/routes)
-    :pedestal (pedestal/new-pedestal)
-    :servlet (component/new-servlet)
+    :routes (routes/new-routes #'coronavirus-scrapper-api.routes/routes)
+    :service (component/using (pedestal/new-service) deps)
+    :servlet (component/using (servlet/new-servlet) [:service])
     ))
 
 (defn dev-components [config-map]

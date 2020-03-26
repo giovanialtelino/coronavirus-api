@@ -2,8 +2,6 @@
   (:gen-class)                                              ; for -main method in uberjar
   (:require [coronavirus-scrapper-api.components :as component]))
 
-(defonce runnable-service (server/create-server service/service))
-
 (defn run-dev
   "The entry-point for 'lein run-dev'"
   [& args]

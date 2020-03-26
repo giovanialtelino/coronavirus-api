@@ -17,7 +17,7 @@
    :active                     Integer
    :featuredId                 Integer
    :population                 Integer
-   :coordinates                [Float, Float]
+   :coordinates                [Float]
    })
 
 (def parse-corona-cases-json
