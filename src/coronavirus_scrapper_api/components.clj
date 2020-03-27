@@ -14,7 +14,7 @@
 (def dev-config-map {:env  :dev
                      :port 8080})
 
-(def deps [:config :database :routes :schema])
+(def deps [:config :routes :database :schema])
 
 (defn prod-components [config-map]
   (component/system-map
@@ -27,9 +27,14 @@
     ))
 
 (defn dev-components [config-map]
-  (let [prod (prod-components config-map)
-        dev (component/system-map {})]
-    (merge prod dev)))
+  (component/system-map
+    :config (config/new-config config-map)
+    :database (component/using (database/new-database) [:config])
+    :schema (schema/new-schema)
+    :routes (routes/new-routes #'coronavirus-scrapper-api.routes/routes)
+    :service (component/using (pedestal/new-service) deps)
+    :servlet (component/using (servlet/new-servlet) [:service])
+    ))
 
 (defn create-and-start-system! [config-map]
   (if (= (:env config-map) :prod)

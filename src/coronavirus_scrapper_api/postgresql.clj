@@ -19,7 +19,7 @@
   (:max (nth (pool-query database ["SELECT MAX (date) FROM coronavirus"]) 0)))
 
 (defn get-latest [database]
-  (pool-query database ["SELECT DISTINCT ON (country) SUM (deaths), SUM(recovered), SUM(confirmed) FROM coronavirus WHERE aggregated = 'CT' ORDER BY date DESC"]))
+  (pool-query database ["SELECT country, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(confirmed) AS confirmed FROM coronavirus WHERE aggregated = 'CT' GROUP BY date, country ORDER BY date DESC LIMIT 1"]))
 
 (defn get-locations [database country_code timelines]
   (let [all-query "SELECT index_id, country, province, location, recovered, confirmed, deaths, url, population, aggregated, date

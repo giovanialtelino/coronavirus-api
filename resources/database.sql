@@ -14,5 +14,6 @@ create TABLE coronavirus
  deaths INTEGER,
  date DATE,
  url TEXT,
- population INTEGER
+ population INTEGER,
+ aggregated VARCHAR(2)
  );

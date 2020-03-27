@@ -1,0 +1,1417 @@
+11:26:56.441 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+11:26:56.966 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+11:26:57.164 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @14954ms to org.eclipse.jetty.util.log.Slf4jLog
+11:29:38.612 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+11:29:38.870 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+11:29:38.907 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @11671ms to org.eclipse.jetty.util.log.Slf4jLog
+11:34:02.992 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+11:34:03.385 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+11:34:03.422 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @11739ms to org.eclipse.jetty.util.log.Slf4jLog
+11:36:53.871 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+11:36:54.266 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+11:36:54.361 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @13794ms to org.eclipse.jetty.util.log.Slf4jLog
+11:39:45.080 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+11:39:45.354 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+11:39:45.388 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @11068ms to org.eclipse.jetty.util.log.Slf4jLog
+11:40:50.056 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+11:40:50.325 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+11:40:50.366 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10587ms to org.eclipse.jetty.util.log.Slf4jLog
+11:43:12.704 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+11:43:12.995 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+11:43:13.045 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10535ms to org.eclipse.jetty.util.log.Slf4jLog
+11:43:13.226 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+11:43:13.263 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@40883ca7{/,null,AVAILABLE}
+11:43:13.285 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@51d9cdf1{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+11:43:13.287 [main] INFO  org.eclipse.jetty.server.Server  - Started @10778ms
+11:48:48.409 [qtp409103500-29] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+11:48:48.466 [qtp409103500-24] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+11:48:50.690 [qtp409103500-24] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+11:49:01.968 [qtp409103500-24] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+11:50:57.856 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+11:50:58.134 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+11:51:50.912 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+11:51:51.177 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+11:51:51.215 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10450ms to org.eclipse.jetty.util.log.Slf4jLog
+11:51:51.370 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+11:51:51.408 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@40883ca7{/,null,AVAILABLE}
+11:51:51.421 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@51d9cdf1{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+11:51:51.422 [main] INFO  org.eclipse.jetty.server.Server  - Started @10657ms
+11:54:12.323 [qtp409103500-27] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+11:57:37.617 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+11:57:37.933 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+11:57:37.995 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10813ms to org.eclipse.jetty.util.log.Slf4jLog
+11:57:38.176 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+11:57:38.256 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@7fd528aa{/,null,AVAILABLE}
+11:57:38.309 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@ff2e200{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+11:57:38.310 [main] INFO  org.eclipse.jetty.server.Server  - Started @11128ms
+11:57:41.379 [qtp1185214157-29] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+11:57:42.165 [qtp1185214157-25] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+11:57:44.427 [qtp1185214157-28] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+11:59:36.818 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+11:59:37.065 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+11:59:37.100 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10379ms to org.eclipse.jetty.util.log.Slf4jLog
+11:59:37.284 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+11:59:37.322 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@3c95bbb4{/,null,AVAILABLE}
+11:59:37.338 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@24623fe4{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+11:59:37.339 [main] INFO  org.eclipse.jetty.server.Server  - Started @10618ms
+11:59:43.569 [qtp644958794-27] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+11:59:46.515 [qtp644958794-23] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+12:01:21.080 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+12:01:21.362 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+12:01:21.412 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @13665ms to org.eclipse.jetty.util.log.Slf4jLog
+12:01:21.587 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+12:01:21.635 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@d55b14b{/,null,AVAILABLE}
+12:01:21.648 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@4b6a81ab{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+12:01:21.651 [main] INFO  org.eclipse.jetty.server.Server  - Started @13904ms
+12:01:26.467 [qtp1639968375-28] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+12:01:44.662 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+12:01:44.910 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+12:01:44.948 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10438ms to org.eclipse.jetty.util.log.Slf4jLog
+12:01:45.126 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+12:01:45.159 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@662107ea{/,null,AVAILABLE}
+12:01:45.172 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@161267b6{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+12:01:45.172 [main] INFO  org.eclipse.jetty.server.Server  - Started @10662ms
+12:02:19.036 [qtp734270769-27] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+12:03:00.417 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+12:03:00.670 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+12:03:00.708 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10795ms to org.eclipse.jetty.util.log.Slf4jLog
+12:03:00.859 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+12:03:00.893 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@4125a698{/,null,AVAILABLE}
+12:03:00.919 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@6f1fd7c1{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+12:03:00.920 [main] INFO  org.eclipse.jetty.server.Server  - Started @11007ms
+12:03:04.061 [qtp1739535493-27] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+12:03:04.103 [qtp1739535493-23] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: no response", :line 215}
+12:08:16.571 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+12:08:16.841 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+12:08:16.877 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10757ms to org.eclipse.jetty.util.log.Slf4jLog
+12:08:17.034 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+12:08:17.068 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@582642e0{/,null,AVAILABLE}
+12:08:17.094 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@27779b40{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+12:08:17.095 [main] INFO  org.eclipse.jetty.server.Server  - Started @10975ms
+12:08:18.618 [qtp1619526548-27] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+12:08:18.659 [qtp1619526548-27] ERROR i.p.http.impl.servlet-interceptor  - {:msg "error-ring-response triggered", :context {:io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x17a2f653 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:08:18 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x74899d4 "io.pedestal.http.servlet.FnServlet@74899d4"], :headers {"host" "localhost:8080", "user-agent" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0", "cookie" "_ga=GA1.1.1886167689.1579285946; ring-session=2fee7208-e62f-4ff6-8c57-80135adc7929; JSESSIONID=emgq2a82rjkmkoluc3g39an9", "connection" "keep-alive", "upgrade-insecure-requests" "1", "accept" "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "accept-language" "en-US,en;q=0.5", "accept-encoding" "gzip, deflate", "dnt" "1"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x25ab6283 "Request(GET //localhost:8080/)@25ab6283"], :components #coronavirus_scrapper_api.components.pedestal.Pedestal{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :routes #coronavirus_scrapper_api.components.routes.Routes{:routes #'coronavirus-scrapper-api.routes/routes}, :database #coronavirus_scrapper_api.components.database.DatabaseComponent{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :database {:datasource #object[com.zaxxer.hikari.HikariDataSource 0x3b3f408e "HikariDataSource (corona)"]}}, :schema #coronavirus_scrapper_api.components.schema.Schema{:schema #object[schema.spec.collection.CollectionSpec$fn__16700 0x3b2f39d4 "schema.spec.collection.CollectionSpec$fn__16700@3b2f39d4"]}}, :path-info "/", :uri "/", :server-name "localhost", :query-string nil, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x78ea815c "HttpInputOverHTTP@78ea815c[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get, :context-path ""}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x6ab4bb8 "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@6ab4bb8"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890 0x475150d3 "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890@475150d3"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x17a2f653 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:08:18 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x74899d4 "io.pedestal.http.servlet.FnServlet@74899d4"], :servlet-request #object[org.eclipse.jetty.server.Request 0x25ab6283 "Request(GET //localhost:8080/)@25ab6283"], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x5f22074 "org.eclipse.jetty.servlet.ServletHolder$Config@5f22074"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x293ea1f7 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@293ea1f7"]}, :line 253}
+clojure.lang.ExceptionInfo: java.lang.ClassCastException in Interceptor :io.pedestal.http.route/router - class coronavirus_scrapper_api.components.routes.Routes cannot be cast to class java.util.concurrent.Future (coronavirus_scrapper_api.components.routes.Routes is in unnamed module of loader clojure.lang.DynamicClassLoader @39660d2; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassCastException: class coronavirus_scrapper_api.components.routes.Routes cannot be cast to class java.util.concurrent.Future (coronavirus_scrapper_api.components.routes.Routes is in unnamed module of loader clojure.lang.DynamicClassLoader @39660d2; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+	at clojure.core$deref_future.invokeStatic(core.clj:2298)
+	at clojure.core$deref.invokeStatic(core.clj:2320)
+	at clojure.core$deref.invoke(core.clj:2306)
+	at coronavirus_scrapper_api.components.pedestal$base_prod_conf$fn__16087.invoke(pedestal.clj:26)
+	at io.pedestal.http.route$eval12658$fn__12659$fn__12660.invoke(route.clj:470)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+12:08:18.661 [qtp1619526548-27] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: exception", :line 215}
+12:10:16.254 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+12:10:16.522 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+12:10:16.574 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10682ms to org.eclipse.jetty.util.log.Slf4jLog
+12:10:16.743 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+12:10:16.778 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@582642e0{/,null,AVAILABLE}
+12:10:16.797 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@27779b40{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+12:10:16.798 [main] INFO  org.eclipse.jetty.server.Server  - Started @10906ms
+12:10:32.504 [qtp1619526548-28] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+12:10:32.548 [qtp1619526548-28] ERROR i.p.http.impl.servlet-interceptor  - {:msg "error-ring-response triggered", :context {:io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x3ff1c797 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:10:32 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x658f1ba6 "io.pedestal.http.servlet.FnServlet@658f1ba6"], :headers {"host" "localhost:8080", "user-agent" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0", "cookie" "_ga=GA1.1.1886167689.1579285946; ring-session=2fee7208-e62f-4ff6-8c57-80135adc7929; JSESSIONID=emgq2a82rjkmkoluc3g39an9", "connection" "keep-alive", "upgrade-insecure-requests" "1", "accept" "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "accept-language" "en-US,en;q=0.5", "accept-encoding" "gzip, deflate", "dnt" "1", "cache-control" "max-age=0"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x71d7d201 "Request(GET //localhost:8080/)@71d7d201"], :components #coronavirus_scrapper_api.components.pedestal.Pedestal{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :routes #coronavirus_scrapper_api.components.routes.Routes{:routes #'coronavirus-scrapper-api.routes/routes}, :database #coronavirus_scrapper_api.components.database.DatabaseComponent{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :database {:datasource #object[com.zaxxer.hikari.HikariDataSource 0x7582e48b "HikariDataSource (corona)"]}}, :schema #coronavirus_scrapper_api.components.schema.Schema{:schema #object[schema.spec.collection.CollectionSpec$fn__16700 0x447e48d3 "schema.spec.collection.CollectionSpec$fn__16700@447e48d3"]}}, :path-info "/", :uri "/", :server-name "localhost", :query-string nil, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x59b129d1 "HttpInputOverHTTP@59b129d1[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get, :context-path ""}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x1639bf3c "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@1639bf3c"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890 0x747db7cc "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890@747db7cc"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x3ff1c797 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:10:32 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x658f1ba6 "io.pedestal.http.servlet.FnServlet@658f1ba6"], :servlet-request #object[org.eclipse.jetty.server.Request 0x71d7d201 "Request(GET //localhost:8080/)@71d7d201"], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x42735140 "org.eclipse.jetty.servlet.ServletHolder$Config@42735140"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x125c077e "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@125c077e"]}, :line 253}
+clojure.lang.ExceptionInfo: clojure.lang.ExceptionInfo in Interceptor :io.pedestal.http.route/router - You're trying to use something as a route specification that isn't supported by the protocol; Perhaps you need to extend it?
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: clojure.lang.ExceptionInfo: You're trying to use something as a route specification that isn't supported by the protocol; Perhaps you need to extend it?
+	at io.pedestal.http.route$expand_routes.invokeStatic(route.clj:421)
+	at io.pedestal.http.route$expand_routes.invoke(route.clj:412)
+	at coronavirus_scrapper_api.components.pedestal$base_prod_conf$fn__16087.invoke(pedestal.clj:26)
+	at io.pedestal.http.route$eval12658$fn__12659$fn__12660.invoke(route.clj:470)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+12:10:32.550 [qtp1619526548-28] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: exception", :line 215}
+12:10:32.756 [qtp1619526548-24] INFO  io.pedestal.http  - {:msg "GET /favicon.ico", :line 80}
+12:10:32.761 [qtp1619526548-24] ERROR i.p.http.impl.servlet-interceptor  - {:msg "error-ring-response triggered", :context {:io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x3ff1c797 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:10:32 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x658f1ba6 "io.pedestal.http.servlet.FnServlet@658f1ba6"], :headers {"host" "localhost:8080", "user-agent" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0", "cookie" "_ga=GA1.1.1886167689.1579285946; ring-session=2fee7208-e62f-4ff6-8c57-80135adc7929; JSESSIONID=emgq2a82rjkmkoluc3g39an9", "connection" "keep-alive", "accept" "image/webp,*/*", "accept-language" "en-US,en;q=0.5", "accept-encoding" "gzip, deflate", "dnt" "1", "cache-control" "max-age=0"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x71d7d201 "Request(GET //localhost:8080/favicon.ico)@71d7d201"], :components #coronavirus_scrapper_api.components.pedestal.Pedestal{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :routes #coronavirus_scrapper_api.components.routes.Routes{:routes #'coronavirus-scrapper-api.routes/routes}, :database #coronavirus_scrapper_api.components.database.DatabaseComponent{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :database {:datasource #object[com.zaxxer.hikari.HikariDataSource 0x7582e48b "HikariDataSource (corona)"]}}, :schema #coronavirus_scrapper_api.components.schema.Schema{:schema #object[schema.spec.collection.CollectionSpec$fn__16700 0x447e48d3 "schema.spec.collection.CollectionSpec$fn__16700@447e48d3"]}}, :path-info "/favicon.ico", :uri "/favicon.ico", :server-name "localhost", :query-string nil, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x59b129d1 "HttpInputOverHTTP@59b129d1[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get, :context-path ""}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x1639bf3c "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@1639bf3c"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890 0x203bb48c "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890@203bb48c"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x3ff1c797 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:10:32 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x658f1ba6 "io.pedestal.http.servlet.FnServlet@658f1ba6"], :servlet-request #object[org.eclipse.jetty.server.Request 0x71d7d201 "Request(GET //localhost:8080/favicon.ico)@71d7d201"], :io.pedestal.interceptor.chain/execution-id 2, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x42735140 "org.eclipse.jetty.servlet.ServletHolder$Config@42735140"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x125c077e "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@125c077e"]}, :line 253}
+clojure.lang.ExceptionInfo: clojure.lang.ExceptionInfo in Interceptor :io.pedestal.http.route/router - You're trying to use something as a route specification that isn't supported by the protocol; Perhaps you need to extend it?
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: clojure.lang.ExceptionInfo: You're trying to use something as a route specification that isn't supported by the protocol; Perhaps you need to extend it?
+	at io.pedestal.http.route$expand_routes.invokeStatic(route.clj:421)
+	at io.pedestal.http.route$expand_routes.invoke(route.clj:412)
+	at coronavirus_scrapper_api.components.pedestal$base_prod_conf$fn__16087.invoke(pedestal.clj:26)
+	at io.pedestal.http.route$eval12658$fn__12659$fn__12660.invoke(route.clj:470)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 43 common frames omitted
+12:10:32.764 [qtp1619526548-24] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: exception", :line 215}
+12:12:08.753 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+12:12:09.016 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+12:12:09.054 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10750ms to org.eclipse.jetty.util.log.Slf4jLog
+12:12:09.250 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+12:12:09.298 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@655f29a2{/,null,AVAILABLE}
+12:12:09.318 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@4beab10{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+12:12:09.318 [main] INFO  org.eclipse.jetty.server.Server  - Started @11014ms
+12:14:13.560 [qtp827443960-28] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+12:14:13.592 [qtp827443960-28] ERROR i.p.http.impl.servlet-interceptor  - {:msg "error-ring-response triggered", :context {:io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x7b5d93be "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:14:13 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x10151a14 "io.pedestal.http.servlet.FnServlet@10151a14"], :headers {"host" "localhost:8080", "user-agent" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0", "cookie" "_ga=GA1.1.1886167689.1579285946; ring-session=2fee7208-e62f-4ff6-8c57-80135adc7929; JSESSIONID=emgq2a82rjkmkoluc3g39an9", "connection" "keep-alive", "upgrade-insecure-requests" "1", "accept" "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "accept-language" "en-US,en;q=0.5", "accept-encoding" "gzip, deflate", "dnt" "1", "cache-control" "max-age=0"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x77025948 "Request(GET //localhost:8080/)@77025948"], :components #coronavirus_scrapper_api.components.pedestal.Pedestal{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :routes #coronavirus_scrapper_api.components.routes.Routes{:routes #'coronavirus-scrapper-api.routes/routes}, :database #coronavirus_scrapper_api.components.database.DatabaseComponent{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :database {:datasource #object[com.zaxxer.hikari.HikariDataSource 0xfcdc229 "HikariDataSource (corona)"]}}, :schema #coronavirus_scrapper_api.components.schema.Schema{:schema #object[schema.spec.collection.CollectionSpec$fn__16700 0x181a600d "schema.spec.collection.CollectionSpec$fn__16700@181a600d"]}}, :path-info "/", :uri "/", :server-name "localhost", :query-string nil, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x20671ca0 "HttpInputOverHTTP@20671ca0[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get, :context-path ""}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x454ad9fd "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@454ad9fd"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890 0x24f787f7 "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890@24f787f7"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x7b5d93be "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:14:13 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x10151a14 "io.pedestal.http.servlet.FnServlet@10151a14"], :servlet-request #object[org.eclipse.jetty.server.Request 0x77025948 "Request(GET //localhost:8080/)@77025948"], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x6f26916c "org.eclipse.jetty.servlet.ServletHolder$Config@6f26916c"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x773c1234 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@773c1234"]}, :line 253}
+clojure.lang.ExceptionInfo: java.lang.ClassCastException in Interceptor :io.pedestal.http.route/router - class coronavirus_scrapper_api.components.routes.Routes cannot be cast to class java.util.concurrent.Future (coronavirus_scrapper_api.components.routes.Routes is in unnamed module of loader clojure.lang.DynamicClassLoader @539fe2b8; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassCastException: class coronavirus_scrapper_api.components.routes.Routes cannot be cast to class java.util.concurrent.Future (coronavirus_scrapper_api.components.routes.Routes is in unnamed module of loader clojure.lang.DynamicClassLoader @539fe2b8; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+	at clojure.core$deref_future.invokeStatic(core.clj:2298)
+	at clojure.core$deref.invokeStatic(core.clj:2320)
+	at clojure.core$deref.invoke(core.clj:2306)
+	at coronavirus_scrapper_api.components.pedestal$base_prod_conf$fn__16087.invoke(pedestal.clj:26)
+	at io.pedestal.http.route$eval12658$fn__12659$fn__12660.invoke(route.clj:470)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+12:14:13.594 [qtp827443960-28] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: exception", :line 215}
+12:16:13.530 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+12:16:13.795 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+12:16:13.831 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10662ms to org.eclipse.jetty.util.log.Slf4jLog
+12:16:14.005 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+12:16:14.040 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@582642e0{/,null,AVAILABLE}
+12:16:14.059 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@27779b40{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+12:16:14.060 [main] INFO  org.eclipse.jetty.server.Server  - Started @10890ms
+12:16:45.817 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+12:16:46.085 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+12:16:46.129 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10479ms to org.eclipse.jetty.util.log.Slf4jLog
+12:16:46.296 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+12:16:46.329 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@4297f992{/,null,AVAILABLE}
+12:16:46.351 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3cfc147c{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+12:16:46.351 [main] INFO  org.eclipse.jetty.server.Server  - Started @10701ms
+12:17:25.332 [qtp923397910-27] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+12:17:25.369 [qtp923397910-27] ERROR i.p.http.impl.servlet-interceptor  - {:msg "error-ring-response triggered", :context {:io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x3d5cc9b "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:17:25 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x99a98bd "io.pedestal.http.servlet.FnServlet@99a98bd"], :headers {"host" "localhost:8080", "user-agent" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0", "cookie" "_ga=GA1.1.1886167689.1579285946; ring-session=2fee7208-e62f-4ff6-8c57-80135adc7929; JSESSIONID=emgq2a82rjkmkoluc3g39an9", "connection" "keep-alive", "upgrade-insecure-requests" "1", "accept" "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "accept-language" "en-US,en;q=0.5", "accept-encoding" "gzip, deflate", "dnt" "1", "cache-control" "max-age=0"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0xcd1ca15 "Request(GET //localhost:8080/)@cd1ca15"], :components #coronavirus_scrapper_api.components.pedestal.Pedestal{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :routes #coronavirus_scrapper_api.components.routes.Routes{:routes #'coronavirus-scrapper-api.routes/routes}, :database #coronavirus_scrapper_api.components.database.DatabaseComponent{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :database {:datasource #object[com.zaxxer.hikari.HikariDataSource 0x788ec73d "HikariDataSource (corona)"]}}, :schema #coronavirus_scrapper_api.components.schema.Schema{:schema #object[schema.spec.collection.CollectionSpec$fn__16700 0x55126da3 "schema.spec.collection.CollectionSpec$fn__16700@55126da3"]}}, :path-info "/", :uri "/", :server-name "localhost", :query-string nil, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x81048cc "HttpInputOverHTTP@81048cc[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get, :context-path ""}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0xa93aab9 "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@a93aab9"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890 0x42a33f9 "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890@42a33f9"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x3d5cc9b "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:17:25 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x99a98bd "io.pedestal.http.servlet.FnServlet@99a98bd"], :servlet-request #object[org.eclipse.jetty.server.Request 0xcd1ca15 "Request(GET //localhost:8080/)@cd1ca15"], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x429339aa "org.eclipse.jetty.servlet.ServletHolder$Config@429339aa"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x484f5f1c "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@484f5f1c"]}, :line 253}
+clojure.lang.ExceptionInfo: java.lang.ClassCastException in Interceptor :io.pedestal.http.route/router - class coronavirus_scrapper_api.components.routes.Routes cannot be cast to class java.util.concurrent.Future (coronavirus_scrapper_api.components.routes.Routes is in unnamed module of loader clojure.lang.DynamicClassLoader @39660d2; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassCastException: class coronavirus_scrapper_api.components.routes.Routes cannot be cast to class java.util.concurrent.Future (coronavirus_scrapper_api.components.routes.Routes is in unnamed module of loader clojure.lang.DynamicClassLoader @39660d2; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+	at clojure.core$deref_future.invokeStatic(core.clj:2298)
+	at clojure.core$deref.invokeStatic(core.clj:2320)
+	at clojure.core$deref.invoke(core.clj:2306)
+	at coronavirus_scrapper_api.components.pedestal$base_prod_conf$fn__16087.invoke(pedestal.clj:28)
+	at io.pedestal.http.route$eval12658$fn__12659$fn__12660.invoke(route.clj:470)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+12:17:25.371 [qtp923397910-27] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: exception", :line 215}
+12:18:30.802 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+12:18:31.069 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+12:18:31.114 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10824ms to org.eclipse.jetty.util.log.Slf4jLog
+12:18:31.284 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+12:18:31.338 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@f044be0{/,null,AVAILABLE}
+12:18:31.361 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1f088e2a{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+12:18:31.361 [main] INFO  org.eclipse.jetty.server.Server  - Started @11071ms
+12:19:36.545 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+12:19:36.848 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+12:19:36.903 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @11557ms to org.eclipse.jetty.util.log.Slf4jLog
+12:19:37.161 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+12:19:37.197 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@74134494{/,null,AVAILABLE}
+12:19:37.209 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@6b25f5df{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+12:19:37.209 [main] INFO  org.eclipse.jetty.server.Server  - Started @11863ms
+12:19:47.436 [qtp582990612-28] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+12:19:49.292 [qtp582990612-24] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+12:19:58.722 [qtp582990612-27] INFO  io.pedestal.http  - {:msg "GET /v2/latest", :line 80}
+12:19:58.760 [qtp582990612-27] ERROR i.p.http.impl.servlet-interceptor  - {:msg "error-ring-response triggered", :context {:io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x588c691 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:19:58 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x22f76b31 "io.pedestal.http.servlet.FnServlet@22f76b31"], :headers {"host" "localhost:8080", "user-agent" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0", "cookie" "_ga=GA1.1.1886167689.1579285946; ring-session=2fee7208-e62f-4ff6-8c57-80135adc7929; JSESSIONID=emgq2a82rjkmkoluc3g39an9", "connection" "keep-alive", "upgrade-insecure-requests" "1", "accept" "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "accept-language" "en-US,en;q=0.5", "accept-encoding" "gzip, deflate", "dnt" "1"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0xf1a2d67 "Request(GET //localhost:8080/v2/latest)@f1a2d67"], :components #coronavirus_scrapper_api.components.pedestal.Pedestal{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :routes #coronavirus_scrapper_api.components.routes.Routes{:routes #'coronavirus-scrapper-api.routes/routes}, :database #coronavirus_scrapper_api.components.database.DatabaseComponent{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :database {:datasource #object[com.zaxxer.hikari.HikariDataSource 0x6b7b2dc5 "HikariDataSource (corona)"]}}, :schema #coronavirus_scrapper_api.components.schema.Schema{:schema #object[schema.spec.collection.CollectionSpec$fn__16700 0x7530b71a "schema.spec.collection.CollectionSpec$fn__16700@7530b71a"]}}, :path-info "/v2/latest", :url-for #object[clojure.lang.Delay 0x71d761e5 {:status :pending, :val nil}], :uri "/v2/latest", :server-name "localhost", :query-string nil, :path-params {}, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x12f80a2 "HttpInputOverHTTP@12f80a2[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get, :context-path ""}, :bindings {#'io.pedestal.http.route/*url-for* #object[clojure.lang.Delay 0x71d761e5 {:status :pending, :val nil}]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x4df757a7 "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@4df757a7"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890 0x226375b1 "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890@226375b1"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x588c691 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 15:19:58 GMT\r\n\r\n"], :route {:path "/v2/latest", :method :get, :path-re #"/\Qv2\E/\Qlatest\E", :path-parts ["v2" "latest"], :interceptors [#Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/html-body} #Interceptor{:name }], :route-name :get-latest, :path-params {}, :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__5672 0x6871e051 "clojure.core$constantly$fn__5672@6871e051"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x22f76b31 "io.pedestal.http.servlet.FnServlet@22f76b31"], :servlet-request #object[org.eclipse.jetty.server.Request 0xf1a2d67 "Request(GET //localhost:8080/v2/latest)@f1a2d67"], :url-for #object[clojure.lang.Delay 0x71d761e5 {:status :pending, :val nil}], :io.pedestal.interceptor.chain/execution-id 3, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x1526476d "org.eclipse.jetty.servlet.ServletHolder$Config@1526476d"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x629b7001 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@629b7001"]}, :line 253}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor  - db-spec coronavirus_scrapper_api.components.database.DatabaseComponent@c22f5aa9 is missing a required parameter
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: db-spec coronavirus_scrapper_api.components.database.DatabaseComponent@c22f5aa9 is missing a required parameter
+	at clojure.java.jdbc$get_connection.invokeStatic(jdbc.clj:437)
+	at clojure.java.jdbc$get_connection.invoke(jdbc.clj:274)
+	at coronavirus_scrapper_api.postgresql$pool_query.invokeStatic(postgresql.clj:7)
+	at coronavirus_scrapper_api.postgresql$pool_query.invoke(postgresql.clj:5)
+	at coronavirus_scrapper_api.postgresql$get_latest.invokeStatic(postgresql.clj:22)
+	at coronavirus_scrapper_api.postgresql$get_latest.invoke(postgresql.clj:21)
+	at coronavirus_scrapper_api.routes$get_latest.invokeStatic(routes.clj:18)
+	at coronavirus_scrapper_api.routes$get_latest.invoke(routes.clj:14)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 44 common frames omitted
+12:19:58.761 [qtp582990612-27] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: exception", :line 215}
+15:23:27.648 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+15:23:27.969 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+15:23:28.014 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @14594ms to org.eclipse.jetty.util.log.Slf4jLog
+15:23:28.210 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+15:23:28.260 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@655f29a2{/,null,AVAILABLE}
+15:23:28.286 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@4beab10{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+15:23:28.286 [main] INFO  org.eclipse.jetty.server.Server  - Started @14866ms
+15:23:57.582 [qtp827443960-27] INFO  io.pedestal.http  - {:msg "GET /v2/latest", :line 80}
+15:23:57.634 [qtp827443960-27] ERROR i.p.http.impl.servlet-interceptor  - {:msg "error-ring-response triggered", :context {:io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x99267fb "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 18:23:57 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x5f00e311 "io.pedestal.http.servlet.FnServlet@5f00e311"], :headers {"host" "localhost:8080", "user-agent" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0", "cookie" "_ga=GA1.1.1886167689.1579285946; ring-session=2fee7208-e62f-4ff6-8c57-80135adc7929; JSESSIONID=emgq2a82rjkmkoluc3g39an9", "connection" "keep-alive", "upgrade-insecure-requests" "1", "accept" "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "accept-language" "en-US,en;q=0.5", "accept-encoding" "gzip, deflate", "dnt" "1", "cache-control" "max-age=0"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x18c11378 "Request(GET //localhost:8080/v2/latest)@18c11378"], :components #coronavirus_scrapper_api.components.pedestal.Pedestal{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :routes #coronavirus_scrapper_api.components.routes.Routes{:routes #'coronavirus-scrapper-api.routes/routes}, :database #coronavirus_scrapper_api.components.database.DatabaseComponent{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :database {:datasource #object[com.zaxxer.hikari.HikariDataSource 0x614b3b17 "HikariDataSource (corona)"]}}, :schema #coronavirus_scrapper_api.components.schema.Schema{:schema #object[schema.spec.collection.CollectionSpec$fn__16700 0x29197cef "schema.spec.collection.CollectionSpec$fn__16700@29197cef"]}}, :path-info "/v2/latest", :url-for #object[clojure.lang.Delay 0x7ba48a41 {:status :pending, :val nil}], :uri "/v2/latest", :server-name "localhost", :query-string nil, :path-params {}, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x19b87fde "HttpInputOverHTTP@19b87fde[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get, :context-path ""}, :bindings {#'io.pedestal.http.route/*url-for* #object[clojure.lang.Delay 0x7ba48a41 {:status :pending, :val nil}]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x590a354a "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@590a354a"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890 0x428b124a "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890@428b124a"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x99267fb "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 18:23:57 GMT\r\n\r\n"], :route {:path "/v2/latest", :method :get, :path-re #"/\Qv2\E/\Qlatest\E", :path-parts ["v2" "latest"], :interceptors [#Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/html-body} #Interceptor{:name }], :route-name :get-latest, :path-params {}, :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__5672 0x1d226ed8 "clojure.core$constantly$fn__5672@1d226ed8"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x5f00e311 "io.pedestal.http.servlet.FnServlet@5f00e311"], :servlet-request #object[org.eclipse.jetty.server.Request 0x18c11378 "Request(GET //localhost:8080/v2/latest)@18c11378"], :url-for #object[clojure.lang.Delay 0x7ba48a41 {:status :pending, :val nil}], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x473ea42d "org.eclipse.jetty.servlet.ServletHolder$Config@473ea42d"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x4f9669e5 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@4f9669e5"]}, :line 253}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor  - db-spec coronavirus_scrapper_api.components.database.DatabaseComponent@b85f4c7b is missing a required parameter
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: db-spec coronavirus_scrapper_api.components.database.DatabaseComponent@b85f4c7b is missing a required parameter
+	at clojure.java.jdbc$get_connection.invokeStatic(jdbc.clj:437)
+	at clojure.java.jdbc$get_connection.invoke(jdbc.clj:274)
+	at coronavirus_scrapper_api.postgresql$pool_query.invokeStatic(postgresql.clj:7)
+	at coronavirus_scrapper_api.postgresql$pool_query.invoke(postgresql.clj:5)
+	at coronavirus_scrapper_api.postgresql$get_latest.invokeStatic(postgresql.clj:24)
+	at coronavirus_scrapper_api.postgresql$get_latest.invoke(postgresql.clj:21)
+	at coronavirus_scrapper_api.routes$get_latest.invokeStatic(routes.clj:18)
+	at coronavirus_scrapper_api.routes$get_latest.invoke(routes.clj:14)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+15:23:57.636 [qtp827443960-27] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: exception", :line 215}
+15:26:34.421 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+15:26:34.700 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+15:26:34.739 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10954ms to org.eclipse.jetty.util.log.Slf4jLog
+15:26:34.921 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+15:26:34.962 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@74134494{/,null,AVAILABLE}
+15:26:34.983 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@6b25f5df{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+15:26:34.984 [main] INFO  org.eclipse.jetty.server.Server  - Started @11199ms
+15:26:45.333 [qtp582990612-28] INFO  io.pedestal.http  - {:msg "GET /v2/latest", :line 80}
+15:26:45.397 [qtp582990612-28] ERROR i.p.http.impl.servlet-interceptor  - {:msg "error-ring-response triggered", :context {:io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x7175fe74 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 18:26:45 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x18cde752 "io.pedestal.http.servlet.FnServlet@18cde752"], :headers {"host" "localhost:8080", "user-agent" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0", "cookie" "_ga=GA1.1.1886167689.1579285946; ring-session=2fee7208-e62f-4ff6-8c57-80135adc7929; JSESSIONID=emgq2a82rjkmkoluc3g39an9", "connection" "keep-alive", "upgrade-insecure-requests" "1", "accept" "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "accept-language" "en-US,en;q=0.5", "accept-encoding" "gzip, deflate", "dnt" "1"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x38555e3a "Request(GET //localhost:8080/v2/latest)@38555e3a"], :components #coronavirus_scrapper_api.components.pedestal.Pedestal{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :routes #coronavirus_scrapper_api.components.routes.Routes{:routes #'coronavirus-scrapper-api.routes/routes}, :database #coronavirus_scrapper_api.components.database.DatabaseComponent{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :database {:datasource #object[com.zaxxer.hikari.HikariDataSource 0x684e22b2 "HikariDataSource (corona)"]}}, :schema #coronavirus_scrapper_api.components.schema.Schema{:schema #object[schema.spec.collection.CollectionSpec$fn__16700 0x288717f4 "schema.spec.collection.CollectionSpec$fn__16700@288717f4"]}}, :path-info "/v2/latest", :url-for #object[clojure.lang.Delay 0x13e97ebf {:status :pending, :val nil}], :uri "/v2/latest", :server-name "localhost", :query-string nil, :path-params {}, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x3c1e381 "HttpInputOverHTTP@3c1e381[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get, :context-path ""}, :bindings {#'io.pedestal.http.route/*url-for* #object[clojure.lang.Delay 0x13e97ebf {:status :pending, :val nil}]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0xb40c08d "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@b40c08d"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890 0x70c57b01 "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890@70c57b01"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x7175fe74 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 18:26:45 GMT\r\n\r\n"], :route {:path "/v2/latest", :method :get, :path-re #"/\Qv2\E/\Qlatest\E", :path-parts ["v2" "latest"], :interceptors [#Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/html-body} #Interceptor{:name }], :route-name :get-latest, :path-params {}, :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__5672 0x2801ef20 "clojure.core$constantly$fn__5672@2801ef20"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x18cde752 "io.pedestal.http.servlet.FnServlet@18cde752"], :servlet-request #object[org.eclipse.jetty.server.Request 0x38555e3a "Request(GET //localhost:8080/v2/latest)@38555e3a"], :url-for #object[clojure.lang.Delay 0x13e97ebf {:status :pending, :val nil}], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x2450cc4a "org.eclipse.jetty.servlet.ServletHolder$Config@2450cc4a"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x299924e5 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@299924e5"]}, :line 253}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor  - db-spec coronavirus_scrapper_api.components.database.DatabaseComponent@bf5a53e0 is missing a required parameter
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: db-spec coronavirus_scrapper_api.components.database.DatabaseComponent@bf5a53e0 is missing a required parameter
+	at clojure.java.jdbc$get_connection.invokeStatic(jdbc.clj:437)
+	at clojure.java.jdbc$get_connection.invoke(jdbc.clj:274)
+	at coronavirus_scrapper_api.postgresql$pool_query.invokeStatic(postgresql.clj:7)
+	at coronavirus_scrapper_api.postgresql$pool_query.invoke(postgresql.clj:5)
+	at coronavirus_scrapper_api.postgresql$get_latest.invokeStatic(postgresql.clj:24)
+	at coronavirus_scrapper_api.postgresql$get_latest.invoke(postgresql.clj:21)
+	at coronavirus_scrapper_api.routes$get_latest.invokeStatic(routes.clj:18)
+	at coronavirus_scrapper_api.routes$get_latest.invoke(routes.clj:14)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+15:26:45.398 [qtp582990612-28] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: exception", :line 215}
+15:31:45.235 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+15:31:45.505 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+15:31:45.540 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10995ms to org.eclipse.jetty.util.log.Slf4jLog
+15:31:45.701 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+15:31:45.744 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5478a4b1{/,null,AVAILABLE}
+15:31:45.759 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@56272a62{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+15:31:45.759 [main] INFO  org.eclipse.jetty.server.Server  - Started @11214ms
+15:32:00.606 [qtp1210804940-28] INFO  io.pedestal.http  - {:msg "GET /v2/latest", :line 80}
+15:32:00.691 [qtp1210804940-28] ERROR i.p.http.impl.servlet-interceptor  - {:msg "error-ring-response triggered", :context {:io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x6534cac9 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 18:32:00 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x3cea4279 "io.pedestal.http.servlet.FnServlet@3cea4279"], :headers {"host" "localhost:8080", "user-agent" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0", "cookie" "_ga=GA1.1.1886167689.1579285946; ring-session=2fee7208-e62f-4ff6-8c57-80135adc7929; JSESSIONID=emgq2a82rjkmkoluc3g39an9", "connection" "keep-alive", "upgrade-insecure-requests" "1", "accept" "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "accept-language" "en-US,en;q=0.5", "accept-encoding" "gzip, deflate", "dnt" "1"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x6b6378f5 "Request(GET //localhost:8080/v2/latest)@6b6378f5"], :components #coronavirus_scrapper_api.components.pedestal.Pedestal{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :routes #coronavirus_scrapper_api.components.routes.Routes{:routes #'coronavirus-scrapper-api.routes/routes}, :database #coronavirus_scrapper_api.components.database.DatabaseComponent{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :database {:datasource #object[com.zaxxer.hikari.HikariDataSource 0x59b7d66a "HikariDataSource (corona)"]}}, :schema #coronavirus_scrapper_api.components.schema.Schema{:schema #object[schema.spec.collection.CollectionSpec$fn__16700 0x3678b6d6 "schema.spec.collection.CollectionSpec$fn__16700@3678b6d6"]}}, :path-info "/v2/latest", :url-for #object[clojure.lang.Delay 0x6b1a5a46 {:status :pending, :val nil}], :uri "/v2/latest", :server-name "localhost", :query-string nil, :path-params {}, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x18a78ff5 "HttpInputOverHTTP@18a78ff5[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get, :context-path ""}, :bindings {#'io.pedestal.http.route/*url-for* #object[clojure.lang.Delay 0x6b1a5a46 {:status :pending, :val nil}]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x27c31763 "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@27c31763"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890 0x4d8f58ec "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890@4d8f58ec"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x6534cac9 "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 18:32:00 GMT\r\n\r\n"], :route {:path "/v2/latest", :method :get, :path-re #"/\Qv2\E/\Qlatest\E", :path-parts ["v2" "latest"], :interceptors [#Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/html-body} #Interceptor{:name }], :route-name :get-latest, :path-params {}, :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__5672 0x747ee371 "clojure.core$constantly$fn__5672@747ee371"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x3cea4279 "io.pedestal.http.servlet.FnServlet@3cea4279"], :servlet-request #object[org.eclipse.jetty.server.Request 0x6b6378f5 "Request(GET //localhost:8080/v2/latest)@6b6378f5"], :url-for #object[clojure.lang.Delay 0x6b1a5a46 {:status :pending, :val nil}], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x5002022c "org.eclipse.jetty.servlet.ServletHolder$Config@5002022c"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x6fc57f40 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@6fc57f40"]}, :line 253}
+clojure.lang.ExceptionInfo: org.postgresql.util.PSQLException in Interceptor  - ERROR: relation "coronavirus" does not exist
+  Position: 80
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "coronavirus" does not exist
+  Position: 80
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2505)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2241)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:447)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:368)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:158)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:108)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at clojure.java.jdbc$execute_query_with_params.invokeStatic(jdbc.clj:1079)
+	at clojure.java.jdbc$execute_query_with_params.invoke(jdbc.clj:1073)
+	at clojure.java.jdbc$db_query_with_resultset_STAR_.invokeStatic(jdbc.clj:1095)
+	at clojure.java.jdbc$db_query_with_resultset_STAR_.invoke(jdbc.clj:1082)
+	at clojure.java.jdbc$query.invokeStatic(jdbc.clj:1171)
+	at clojure.java.jdbc$query.invoke(jdbc.clj:1133)
+	at clojure.java.jdbc$query.invokeStatic(jdbc.clj:1149)
+	at clojure.java.jdbc$query.invoke(jdbc.clj:1133)
+	at coronavirus_scrapper_api.postgresql$pool_query.invokeStatic(postgresql.clj:8)
+	at coronavirus_scrapper_api.postgresql$pool_query.invoke(postgresql.clj:5)
+	at coronavirus_scrapper_api.postgresql$get_latest.invokeStatic(postgresql.clj:24)
+	at coronavirus_scrapper_api.postgresql$get_latest.invoke(postgresql.clj:21)
+	at coronavirus_scrapper_api.routes$get_latest.invokeStatic(routes.clj:18)
+	at coronavirus_scrapper_api.routes$get_latest.invoke(routes.clj:14)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+15:32:00.693 [qtp1210804940-28] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: exception", :line 215}
+15:38:55.227 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+15:38:55.487 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+15:38:55.528 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @12110ms to org.eclipse.jetty.util.log.Slf4jLog
+15:38:55.691 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+15:38:55.729 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5478a4b1{/,null,AVAILABLE}
+15:38:55.750 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@56272a62{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+15:38:55.751 [main] INFO  org.eclipse.jetty.server.Server  - Started @12334ms
+15:39:19.168 [qtp1210804940-27] INFO  io.pedestal.http  - {:msg "GET /v2/latest", :line 80}
+15:39:19.260 [qtp1210804940-27] ERROR i.p.http.impl.servlet-interceptor  - {:msg "error-ring-response triggered", :context {:io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/stylobate} #Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x565a6b7d "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 18:39:19 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x4150e91e "io.pedestal.http.servlet.FnServlet@4150e91e"], :headers {"host" "localhost:8080", "user-agent" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:74.0) Gecko/20100101 Firefox/74.0", "cookie" "_ga=GA1.1.1886167689.1579285946; ring-session=2fee7208-e62f-4ff6-8c57-80135adc7929; JSESSIONID=emgq2a82rjkmkoluc3g39an9", "connection" "keep-alive", "upgrade-insecure-requests" "1", "accept" "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "accept-language" "en-US,en;q=0.5", "accept-encoding" "gzip, deflate", "dnt" "1"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x17c89921 "Request(GET //localhost:8080/v2/latest)@17c89921"], :components #coronavirus_scrapper_api.components.pedestal.Pedestal{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :routes #coronavirus_scrapper_api.components.routes.Routes{:routes #'coronavirus-scrapper-api.routes/routes}, :database #coronavirus_scrapper_api.components.database.DatabaseComponent{:config #coronavirus_scrapper_api.components.config.Config{:config nil, :env :prod, :port 8080}, :database {:datasource #object[com.zaxxer.hikari.HikariDataSource 0x1719d1f0 "HikariDataSource (corona)"]}}, :schema #coronavirus_scrapper_api.components.schema.Schema{:schema #object[schema.spec.collection.CollectionSpec$fn__16700 0x121d51ed "schema.spec.collection.CollectionSpec$fn__16700@121d51ed"]}}, :path-info "/v2/latest", :url-for #object[clojure.lang.Delay 0x5ede1fc2 {:status :pending, :val nil}], :uri "/v2/latest", :server-name "localhost", :query-string nil, :path-params {}, :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x26b4bfcd "HttpInputOverHTTP@26b4bfcd[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get, :context-path ""}, :bindings {#'io.pedestal.http.route/*url-for* #object[clojure.lang.Delay 0x5ede1fc2 {:status :pending, :val nil}]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x682c67a8 "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@682c67a8"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890 0x61f0ef7c "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__15890@61f0ef7c"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x565a6b7d "HTTP/1.1 200 \nDate: Fri, 27 Mar 2020 18:39:19 GMT\r\n\r\n"], :route {:path "/v2/latest", :method :get, :path-re #"/\Qv2\E/\Qlatest\E", :path-parts ["v2" "latest"], :interceptors [#Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/html-body} #Interceptor{:name }], :route-name :get-latest, :path-params {}, :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__5672 0x4f7edc8f "clojure.core$constantly$fn__5672@4f7edc8f"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x4150e91e "io.pedestal.http.servlet.FnServlet@4150e91e"], :servlet-request #object[org.eclipse.jetty.server.Request 0x17c89921 "Request(GET //localhost:8080/v2/latest)@17c89921"], :url-for #object[clojure.lang.Delay 0x5ede1fc2 {:status :pending, :val nil}], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x4c37487a "org.eclipse.jetty.servlet.ServletHolder$Config@4c37487a"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x47ad7773 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@47ad7773"]}, :line 253}
+clojure.lang.ExceptionInfo: org.postgresql.util.PSQLException in Interceptor  - ERROR: relation "coronavirus" does not exist
+  Position: 80
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "coronavirus" does not exist
+  Position: 80
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2505)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2241)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:447)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:368)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:158)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:108)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at clojure.java.jdbc$execute_query_with_params.invokeStatic(jdbc.clj:1079)
+	at clojure.java.jdbc$execute_query_with_params.invoke(jdbc.clj:1073)
+	at clojure.java.jdbc$db_query_with_resultset_STAR_.invokeStatic(jdbc.clj:1095)
+	at clojure.java.jdbc$db_query_with_resultset_STAR_.invoke(jdbc.clj:1082)
+	at clojure.java.jdbc$query.invokeStatic(jdbc.clj:1171)
+	at clojure.java.jdbc$query.invoke(jdbc.clj:1133)
+	at clojure.java.jdbc$query.invokeStatic(jdbc.clj:1149)
+	at clojure.java.jdbc$query.invoke(jdbc.clj:1133)
+	at coronavirus_scrapper_api.postgresql$pool_query.invokeStatic(postgresql.clj:8)
+	at coronavirus_scrapper_api.postgresql$pool_query.invoke(postgresql.clj:5)
+	at coronavirus_scrapper_api.postgresql$get_latest.invokeStatic(postgresql.clj:22)
+	at coronavirus_scrapper_api.postgresql$get_latest.invoke(postgresql.clj:21)
+	at coronavirus_scrapper_api.routes$get_latest.invokeStatic(routes.clj:18)
+	at coronavirus_scrapper_api.routes$get_latest.invoke(routes.clj:14)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+15:39:19.261 [qtp1210804940-27] INFO  i.p.http.impl.servlet-interceptor  - {:msg "sending error", :message "Internal server error: exception", :line 215}
+15:39:19.316 [qtp1210804940-23] INFO  io.pedestal.http  - {:msg "GET /favicon.ico", :line 80}
+15:40:27.947 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+15:40:28.202 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+15:40:28.240 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10428ms to org.eclipse.jetty.util.log.Slf4jLog
+15:40:28.407 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+15:40:28.452 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@655f29a2{/,null,AVAILABLE}
+15:40:28.469 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@4beab10{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+15:40:28.470 [main] INFO  org.eclipse.jetty.server.Server  - Started @10658ms
+15:40:43.779 [qtp827443960-27] INFO  io.pedestal.http  - {:msg "GET /v2/latest", :line 80}
+15:40:43.837 [qtp827443960-27] ERROR i.p.http.impl.servlet-interceptor  - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 314}
+clojure.lang.ExceptionInfo: org.postgresql.util.PSQLException in Interceptor  - ERROR: column "aggregated" does not exist
+  Position: 98
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "aggregated" does not exist
+  Position: 98
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2505)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2241)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:447)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:368)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:158)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:108)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at clojure.java.jdbc$execute_query_with_params.invokeStatic(jdbc.clj:1079)
+	at clojure.java.jdbc$execute_query_with_params.invoke(jdbc.clj:1073)
+	at clojure.java.jdbc$db_query_with_resultset_STAR_.invokeStatic(jdbc.clj:1095)
+	at clojure.java.jdbc$db_query_with_resultset_STAR_.invoke(jdbc.clj:1082)
+	at clojure.java.jdbc$query.invokeStatic(jdbc.clj:1171)
+	at clojure.java.jdbc$query.invoke(jdbc.clj:1133)
+	at clojure.java.jdbc$query.invokeStatic(jdbc.clj:1149)
+	at clojure.java.jdbc$query.invoke(jdbc.clj:1133)
+	at coronavirus_scrapper_api.postgresql$pool_query.invokeStatic(postgresql.clj:8)
+	at coronavirus_scrapper_api.postgresql$pool_query.invoke(postgresql.clj:5)
+	at coronavirus_scrapper_api.postgresql$get_latest.invokeStatic(postgresql.clj:22)
+	at coronavirus_scrapper_api.postgresql$get_latest.invoke(postgresql.clj:21)
+	at coronavirus_scrapper_api.routes$get_latest.invokeStatic(routes.clj:18)
+	at coronavirus_scrapper_api.routes$get_latest.invoke(routes.clj:14)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+15:44:30.780 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+15:44:31.053 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+15:44:31.109 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10862ms to org.eclipse.jetty.util.log.Slf4jLog
+15:44:31.272 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+15:44:31.309 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@74134494{/,null,AVAILABLE}
+15:44:31.323 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@6b25f5df{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+15:44:31.324 [main] INFO  org.eclipse.jetty.server.Server  - Started @11077ms
+15:44:35.810 [qtp582990612-26] INFO  io.pedestal.http  - {:msg "GET /v2/latest", :line 80}
+15:44:35.868 [qtp582990612-26] ERROR i.p.http.impl.servlet-interceptor  - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 314}
+clojure.lang.ExceptionInfo: org.postgresql.util.PSQLException in Interceptor  - ERROR: SELECT DISTINCT ON expressions must match initial ORDER BY expressions
+  Position: 21
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.postgresql.util.PSQLException: ERROR: SELECT DISTINCT ON expressions must match initial ORDER BY expressions
+  Position: 21
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2505)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2241)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:447)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:368)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:158)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:108)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at clojure.java.jdbc$execute_query_with_params.invokeStatic(jdbc.clj:1079)
+	at clojure.java.jdbc$execute_query_with_params.invoke(jdbc.clj:1073)
+	at clojure.java.jdbc$db_query_with_resultset_STAR_.invokeStatic(jdbc.clj:1095)
+	at clojure.java.jdbc$db_query_with_resultset_STAR_.invoke(jdbc.clj:1082)
+	at clojure.java.jdbc$query.invokeStatic(jdbc.clj:1171)
+	at clojure.java.jdbc$query.invoke(jdbc.clj:1133)
+	at clojure.java.jdbc$query.invokeStatic(jdbc.clj:1149)
+	at clojure.java.jdbc$query.invoke(jdbc.clj:1133)
+	at coronavirus_scrapper_api.postgresql$pool_query.invokeStatic(postgresql.clj:8)
+	at coronavirus_scrapper_api.postgresql$pool_query.invoke(postgresql.clj:5)
+	at coronavirus_scrapper_api.postgresql$get_latest.invokeStatic(postgresql.clj:22)
+	at coronavirus_scrapper_api.postgresql$get_latest.invoke(postgresql.clj:21)
+	at coronavirus_scrapper_api.routes$get_latest.invokeStatic(routes.clj:18)
+	at coronavirus_scrapper_api.routes$get_latest.invoke(routes.clj:14)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+15:44:36.188 [qtp582990612-24] INFO  io.pedestal.http  - {:msg "GET /favicon.ico", :line 80}
+15:51:10.662 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+15:51:10.981 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+15:51:11.030 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @12795ms to org.eclipse.jetty.util.log.Slf4jLog
+15:51:11.283 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+15:51:11.376 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@655f29a2{/,null,AVAILABLE}
+15:51:11.399 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@4beab10{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+15:51:11.399 [main] INFO  org.eclipse.jetty.server.Server  - Started @13164ms
+15:52:55.643 [qtp827443960-28] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+15:52:55.723 [qtp827443960-28] ERROR i.p.http.impl.servlet-interceptor  - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 314}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor  - No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at clojure.lang.PersistentHashMap.create(PersistentHashMap.java:77)
+	at coronavirus_scrapper_api.routes$post_data.invokeStatic(routes.clj:39)
+	at coronavirus_scrapper_api.routes$post_data.invoke(routes.clj:39)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+15:53:42.247 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+15:53:42.518 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+15:53:42.552 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10323ms to org.eclipse.jetty.util.log.Slf4jLog
+15:53:42.711 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+15:53:42.742 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@f044be0{/,null,AVAILABLE}
+15:53:42.764 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1f088e2a{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+15:53:42.765 [main] INFO  org.eclipse.jetty.server.Server  - Started @10535ms
+16:06:04.550 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+16:06:04.816 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+16:06:04.851 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @16418ms to org.eclipse.jetty.util.log.Slf4jLog
+16:06:05.007 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+16:06:05.041 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@582642e0{/,null,AVAILABLE}
+16:06:05.053 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@27779b40{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+16:06:05.053 [main] INFO  org.eclipse.jetty.server.Server  - Started @16620ms
+16:06:15.509 [qtp1619526548-26] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:06:15.586 [qtp1619526548-26] ERROR i.p.http.impl.servlet-interceptor  - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 314}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor  - No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at clojure.lang.PersistentHashMap.create(PersistentHashMap.java:77)
+	at coronavirus_scrapper_api.routes$post_data.invokeStatic(routes.clj:39)
+	at coronavirus_scrapper_api.routes$post_data.invoke(routes.clj:39)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+16:07:28.814 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+16:07:29.074 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+16:07:29.112 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10586ms to org.eclipse.jetty.util.log.Slf4jLog
+16:07:29.290 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+16:07:29.324 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@2b7cd454{/,null,AVAILABLE}
+16:07:29.337 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3dc3c293{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+16:07:29.337 [main] INFO  org.eclipse.jetty.server.Server  - Started @10810ms
+16:07:59.594 [qtp1722293320-27] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:07:59.690 [qtp1722293320-27] ERROR i.p.http.impl.servlet-interceptor  - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 314}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor  - No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at clojure.lang.PersistentHashMap.create(PersistentHashMap.java:77)
+	at coronavirus_scrapper_api.routes$post_data.invokeStatic(routes.clj:39)
+	at coronavirus_scrapper_api.routes$post_data.invoke(routes.clj:39)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+16:09:38.240 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+16:09:38.523 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+16:09:38.561 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10625ms to org.eclipse.jetty.util.log.Slf4jLog
+16:09:38.729 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+16:09:38.769 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@74134494{/,null,AVAILABLE}
+16:09:38.779 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@6b25f5df{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+16:09:38.780 [main] INFO  org.eclipse.jetty.server.Server  - Started @10845ms
+16:09:53.578 [qtp582990612-27] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:09:53.662 [qtp582990612-27] ERROR i.p.http.impl.servlet-interceptor  - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 314}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor  - No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at clojure.lang.PersistentHashMap.create(PersistentHashMap.java:77)
+	at coronavirus_scrapper_api.routes$post_data.invokeStatic(routes.clj:40)
+	at coronavirus_scrapper_api.routes$post_data.invoke(routes.clj:40)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+16:18:59.063 [qtp582990612-30] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:18:59.081 [qtp582990612-30] ERROR i.p.http.impl.servlet-interceptor  - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 314}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor  - No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :featureId 308, :active 77, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 77, :aggregate "county", :country "BRA", :rating 0.6097560975609756}
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :featureId 308, :active 77, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 77, :aggregate "county", :country "BRA", :rating 0.6097560975609756}
+	at clojure.lang.PersistentHashMap.create(PersistentHashMap.java:77)
+	at coronavirus_scrapper_api.routes$post_data.invokeStatic(routes.clj:40)
+	at coronavirus_scrapper_api.routes$post_data.invoke(routes.clj:40)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+16:25:49.297 [qtp582990612-29] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:26:44.646 [qtp582990612-22] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:27:39.088 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+16:27:39.465 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+16:27:39.511 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @12225ms to org.eclipse.jetty.util.log.Slf4jLog
+16:27:39.757 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+16:27:39.810 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5478a4b1{/,null,AVAILABLE}
+16:27:39.845 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@56272a62{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+16:27:39.846 [main] INFO  org.eclipse.jetty.server.Server  - Started @12559ms
+16:28:21.653 [qtp1210804940-30] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:28:21.861 [qtp1210804940-30] ERROR i.p.http.impl.servlet-interceptor  - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 314}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor  - No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at clojure.lang.PersistentHashMap.create(PersistentHashMap.java:77)
+	at coronavirus_scrapper_api.routes$post_data.invokeStatic(routes.clj:40)
+	at coronavirus_scrapper_api.routes$post_data.invoke(routes.clj:40)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+16:28:56.048 [qtp1210804940-25] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:29:07.565 [qtp1210804940-28] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:29:47.594 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+16:29:47.914 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+16:29:47.950 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @13733ms to org.eclipse.jetty.util.log.Slf4jLog
+16:29:48.156 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+16:29:48.198 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@74134494{/,null,AVAILABLE}
+16:29:48.219 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@6b25f5df{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+16:29:48.219 [main] INFO  org.eclipse.jetty.server.Server  - Started @14002ms
+16:29:52.433 [qtp582990612-24] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:30:51.567 [qtp582990612-22] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:31:07.122 [qtp582990612-28] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:31:07.211 [qtp582990612-28] ERROR i.p.http.impl.servlet-interceptor  - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 314}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor  - No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.IllegalArgumentException: No value supplied for key: {:coordinates [-54.38839290699988 -14.236725569657125], :deaths 4, :featureId 1026, :active 424, :population 207353391, :url "http://plataforma.saude.gov.br/novocoronavirus/resources/scripts/database.js?v=2020-03-18", :cases 428, :aggregate "county", :country "BRA", :rating 0.7073170731707317}
+	at clojure.lang.PersistentHashMap.create(PersistentHashMap.java:77)
+	at coronavirus_scrapper_api.routes$post_data.invokeStatic(routes.clj:40)
+	at coronavirus_scrapper_api.routes$post_data.invoke(routes.clj:40)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 44 common frames omitted
+16:35:37.953 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+16:35:38.208 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+16:35:38.246 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @11275ms to org.eclipse.jetty.util.log.Slf4jLog
+16:35:38.406 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+16:35:38.444 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5478a4b1{/,null,AVAILABLE}
+16:35:38.457 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@56272a62{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+16:35:38.458 [main] INFO  org.eclipse.jetty.server.Server  - Started @11486ms
+16:35:44.217 [qtp1210804940-27] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:36:14.861 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+16:36:15.155 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+16:36:15.194 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @10550ms to org.eclipse.jetty.util.log.Slf4jLog
+16:36:15.352 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+16:36:15.392 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@4297f992{/,null,AVAILABLE}
+16:36:15.404 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3cfc147c{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+16:36:15.407 [main] INFO  org.eclipse.jetty.server.Server  - Started @10763ms
+16:36:19.106 [qtp923397910-27] INFO  io.pedestal.http  - {:msg "POST /postdata/10-10-10", :line 80}
+16:36:19.137 [qtp923397910-27] ERROR i.p.http.impl.servlet-interceptor  - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 314}
+clojure.lang.ExceptionInfo: clojure.lang.ArityException in Interceptor  - Wrong number of args (1) passed to: coronavirus-scrapper-api.routes/post-data
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__11705.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:665)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1973)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1973)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__15915.invoke(servlet_interceptor.clj:351)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: clojure.lang.ArityException: Wrong number of args (1) passed to: coronavirus-scrapper-api.routes/post-data
+	at clojure.lang.AFn.throwArity(AFn.java:429)
+	at clojure.lang.AFn.invoke(AFn.java:32)
+	at io.pedestal.interceptor$eval1160$fn__1161$fn__1162.invoke(interceptor.clj:41)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted

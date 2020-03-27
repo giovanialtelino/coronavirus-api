@@ -13,9 +13,9 @@
                       :maximum-pool-size  10
                       :pool-name          "corona"
                       :adapter            "postgresql"
-                      :username           "docker"
-                      :password           "docker"
-                      :database-name      "postgres"
+                      :username           "covid"
+                      :password           "covidpwd"
+                      :database-name      "altrunox"
                       :server-name        "localhost"
                       :port-number        5432
                       :register-mbeans    false})
@@ -31,9 +31,9 @@
                      :maximum-pool-size  10
                      :pool-name          "corona"
                      :adapter            "postgresql"
-                     :username           "docker"
-                     :password           "docker"
-                     :database-name      "postgres"
+                     :username           "covid"
+                     :password           "covidpwd"
+                     :database-name      "altrunox"
                      :server-name        "localhost"
                      :port-number        5432
                      :register-mbeans    false})

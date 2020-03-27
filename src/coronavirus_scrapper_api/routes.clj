@@ -1,19 +1,22 @@
 (ns coronavirus-scrapper-api.routes
-  (:require [com.stuartsierra.component :as component]
-            [io.pedestal.http :as http]
+  (:require [io.pedestal.http :as bootstrap]
             [io.pedestal.http.body-params :as body-params]
             [coronavirus-scrapper-api.postgresql :as database]
+            [cheshire.core :as cs]
             [ring.util.response :as ring-resp]))
 
 (defn home-page
   [request]
-  (ring-resp/response "Hello, please check https://github.com/giovanialtelino/coronavirus-scrapper-api to check some docs of this API"))
+  (ring-resp/content-type
+    (ring-resp/response
+      "Hello, please check https://github.com/giovanialtelino/coronavirus-scrapper-api to check some docs of this API")
+    "text/plain"))
 
 (defn get-latest
   [{{:keys [database]} :components}]
   (ring-resp/content-type
     (ring-resp/response
-      (database/get-latest database))
+      (database/get-latest (:database database)))
     "application/json"))
 
 ;country_code or timelines true or false
@@ -22,7 +25,7 @@
     {:keys [database]}               :components}]
   (ring-resp/content-type
     (ring-resp/response
-      (database/get-locations database country_code timelines))
+      (database/get-locations (:database database) country_code timelines))
     "application/json"))
 
 (defn get-location-id
@@ -30,26 +33,29 @@
     {:keys [database]} :components}]
   (ring-resp/content-type
     (ring-resp/response
-      (database/get-location-by-id database id))
+      (database/get-location-by-id (:database database) id))
     "application/json"))
 
+; (database/post-data (:database database) date json)
 (defn post-data
   [{{:keys [date]}     :path-params
-    {:keys [database schema]} :components
-    {:keys [json]}     :json-params}]
-  (ring-resp/response
-    (database/post-data database date json)))
+    {:keys [database]} :components
+    {:keys [json]}     :json-params}
+   request]
+  (prn "JSON BELOW")
+  (prn  request)
+  (ring-resp/response date))
 
 (defn delete-data
   [{{:keys [date]}     :path-params
     {:keys [database]} :components}]
   (try
-    (database/delete-data database date)
+    (database/delete-data (:database database) date)
     (ring-resp/response "Data deleted")
     (catch Exception e
       (ring-resp/response (str "Error while deleting: " e)))))
 
-(def common-interceptors [(body-params/body-params) http/html-body])
+(def common-interceptors [(body-params/body-params) bootstrap/html-body])
 
 (def routes #{["/" :get (conj common-interceptors `home-page) :route-name :index]
               ["/v2/latest" :get (conj common-interceptors `get-latest) :route-name :get-latest]
