@@ -7,10 +7,10 @@
             [coronavirus-scrapper-api.utils :as utils]))
 
 (defn home-page
-  [request]
+  [{{:keys [database]} :components}]
   (ring-resp/content-type
     (ring-resp/response
-      "Hello, please check https://github.com/giovanialtelino/coronavirus-scrapper-api to check some docs of this API")
+      (str "Hello, please check https://github.com/giovanialtelino/coronavirus-scrapper-api to check some docs of this API /n The last updated happened in: " (database/get-last-update-date (:database database))))
     "text/plain"))
 
 (defn get-latest

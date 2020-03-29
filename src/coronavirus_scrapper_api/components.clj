@@ -8,7 +8,7 @@
             [coronavirus-scrapper-api.routes]))
 
 (def prod-config-map {:env  :prod
-                      :port 8080})
+                      :port 8888})
 
 (def dev-config-map {:env  :dev
                      :port 8080})
