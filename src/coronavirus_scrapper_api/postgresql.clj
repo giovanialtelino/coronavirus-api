@@ -14,7 +14,7 @@
                               result))))
 
 (defn get-timeline-by-id [database id]
-  (pool-query database "SELECT recovered, confirmed, deaths, date FROM coronavirus WHERE index_id = ? ORDER BY date DESC" id))
+  (into [] (pool-query database "SELECT recovered, confirmed, deaths, date FROM coronavirus WHERE index_id = ? ORDER BY date DESC" id)))
 
 (defn get-last-update-date [database]
   (:max (nth (pool-query database ["SELECT MAX (date) FROM coronavirus"]) 0)))
@@ -28,6 +28,15 @@
     GROUP BY CO.date, CO.country, CT.name, CT.iso3
     ORDER BY CO.date" last-update)))
 
+(defn- loop-and-merge-maps [covid-map database]
+  (loop [i 0
+         map-with-timeline covid-map]
+    (if (< i (count covid-map))
+      (let [index-timeline (get-timeline-by-id database (:index_id (nth covid-map i)))
+            merged-map (merge (nth covid-map i) {:timelines index-timeline})]
+        (recur (inc i) (assoc map-with-timeline i merged-map)))
+      map-with-timeline)))
+
 (defn get-locations [database country_code timelines]
   (let [last-update (get-last-update-date database)
         all-query "SELECT CO.index_id, Ct.iso3, CT.name, CO.state, CO.county, CO.location, CO.recovered, CO.confirmed, CO.deaths, CO.url, CO.population, CO.aggregated, CO.date
@@ -40,22 +49,23 @@
                             INNER JOIN country CT ON CO.country = CT.id
                             WHERE CT.iso3 = ? AND date=?
                             ORDER BY date DESC"
-        query (if (nil? country_code)
+        query (into [] (if (nil? country_code)
                 (pool-query database all-query last-update)
-                (pool-query database [country-code-query country_code last-update]))]
+                (pool-query database [country-code-query country_code last-update])))]
     (if (nil? timelines)
       query
-      (do
-        (let [index-timeline (get-timeline-by-id database (:index_id query))]
-          (prn query)
-
-
-          )))))
+      (loop-and-merge-maps query database))))
 
 (defn get-location-by-id [database id]
-  (pool-query database ["SELECT index_id, country, state, county, location, recovered, confirmed, deaths, url, population, aggregated, date, timeline FROM coronavirus
-   WHERE timeline IN (SELECT recovered, confirmed, deaths, date FROM coronavirus WHERE index_id = ? ORDER BY date DESC) AND index_id = ?
-   ORDER BY date DESC LIMIT 1"] [id id]))
+  (let [id-integer (Integer/parseInt id)
+        last-update (get-last-update-date database)
+        without-timeline (first (pool-query database ["SELECT CO.index_id, Ct.iso3, CT.name, CO.state, CO.county, CO.location, CO.recovered, CO.confirmed, CO.deaths, CO.url, CO.population, CO.aggregated, CO.date
+                      FROM coronavirus CO
+                      INNER JOIN country CT ON CO.country = CT.id
+                      WHERE CO.date= ? AND CO.index_id= ?
+                      ORDER BY Ct.iso3 ASC" last-update id-integer]))
+        index-timeline (get-timeline-by-id database (:index_id without-timeline))]
+    (merge without-timeline {:timelines index-timeline})))
 
 (defn- get-country-id [database country-abrev]
   (pool-query database "SELECT id FROM country WHERE iso3 = ?" country-abrev))

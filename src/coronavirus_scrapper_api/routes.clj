@@ -17,7 +17,7 @@
   [{{:keys [database]} :components}]
   (ring-resp/content-type
     (ring-resp/response
-      (database/get-latest (:database database)))
+      (cs/generate-string (database/get-latest (:database database))))
     "application/json"))
 
 ;country_code or timelines true or false
@@ -26,7 +26,7 @@
     {:keys [database]}               :components}]
   (ring-resp/content-type
     (ring-resp/response
-      (database/get-locations (:database database) country_code timelines))
+      (cs/generate-string (database/get-locations (:database database) country_code timelines)))
     "application/json"))
 
 (defn get-location-id
@@ -34,7 +34,7 @@
     {:keys [database]} :components}]
   (ring-resp/content-type
     (ring-resp/response
-      (database/get-location-by-id (:database database) id))
+      (cs/generate-string (database/get-location-by-id (:database database) id)))
     "application/json"))
 
 ; (database/post-data (:database database) date json)
@@ -48,7 +48,7 @@
         database (:database (:database components))]
     (ring-resp/content-type
       (ring-resp/response
-        (database/post-data database date (utils/schema-parser (vec edn-data))))
+        (cs/generate-string (database/post-data database date (utils/schema-parser (vec edn-data)))))
       "application/json")))
 
 ;{:datasource #object[com.zaxxer.hikari.HikariDataSource 0x21f341f0 "HikariDataSource (corona)"]}

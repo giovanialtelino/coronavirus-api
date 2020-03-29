@@ -4,7 +4,6 @@
     <list default="true" id="d9db5220-cdd9-4ef6-8fe9-1f01600bb8f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/coronavirus-scrapper-api-2020-03-29.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/coronavirus-scrapper-api-2020-03-29.0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resources/database.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/coronavirus_scrapper_api/postgresql.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/postgresql.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/coronavirus_scrapper_api/routes.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/routes.clj" afterDir="false" />
     </list>
