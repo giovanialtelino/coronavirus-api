@@ -49,6 +49,8 @@
       (assoc this :database {:datasource (datasource datasource-prod)})
       (assoc this :database {:datasource (datasource datasource-dev)})))
   (stop [this]
-    (assoc this :database nil)))
+    (assoc this :database nil))
+  Object
+  (toString [_] "<Database>"))
 
 (defn new-database [] (map->DatabaseComponent {}))

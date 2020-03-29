@@ -3,7 +3,8 @@
             [io.pedestal.http.body-params :as body-params]
             [coronavirus-scrapper-api.postgresql :as database]
             [cheshire.core :as cs]
-            [ring.util.response :as ring-resp]))
+            [ring.util.response :as ring-resp]
+            [coronavirus-scrapper-api.utils :as utils]))
 
 (defn home-page
   [request]
@@ -14,6 +15,7 @@
 
 (defn get-latest
   [{{:keys [database]} :components}]
+  (prn (:database database))
   (ring-resp/content-type
     (ring-resp/response
       (database/get-latest (:database database)))
@@ -37,14 +39,21 @@
     "application/json"))
 
 ; (database/post-data (:database database) date json)
+;;Not sure why,  but if I try to extract the keys as below I get an error on the :json-params
+;{{:keys [date]}     :path-params {:keys [database]} :components {:keys [json]}     :json-params}
 (defn post-data
-  [{{:keys [date]}     :path-params
-    {:keys [database]} :components
-    {:keys [json]}     :json-params}
-   request]
-  (prn "JSON BELOW")
-  (prn  request)
-  (ring-resp/response date))
+  [request]
+  (let [edn-data (:json-params request)
+        date (:date (:path-params request))
+        components (:components request)
+        database (:database (:database components))]
+    (ring-resp/content-type
+      (ring-resp/response
+        (database/post-data database date (utils/schema-parser (vec edn-data))))
+      "application/json")))
+
+;{:datasource #object[com.zaxxer.hikari.HikariDataSource 0x21f341f0 "HikariDataSource (corona)"]}
+
 
 (defn delete-data
   [{{:keys [date]}     :path-params
@@ -63,4 +72,3 @@
               ["/v2/locations/:id" :get (conj common-interceptors `get-location-id) :route-name :get-location-by-id]
               ["/postdata/:date" :post (conj common-interceptors `post-data) :route-name :post-location-json]
               ["/deletedata/:date" :delete (conj common-interceptors `delete-data) :route-name :delete-data-date]})
-
