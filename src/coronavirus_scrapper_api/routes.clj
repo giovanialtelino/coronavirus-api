@@ -15,7 +15,6 @@
 
 (defn get-latest
   [{{:keys [database]} :components}]
-  (prn (:database database))
   (ring-resp/content-type
     (ring-resp/response
       (database/get-latest (:database database)))

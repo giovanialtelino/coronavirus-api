@@ -14,33 +14,46 @@
                               result))))
 
 (defn get-timeline-by-id [database id]
-  (pool-query database ["SELECT recovered, confirmed, deaths, date FROM coronavirus WHERE index_id = ? ORDER BY date DESC"] id))
+  (pool-query database "SELECT recovered, confirmed, deaths, date FROM coronavirus WHERE index_id = ? ORDER BY date DESC" id))
 
 (defn get-last-update-date [database]
   (:max (nth (pool-query database ["SELECT MAX (date) FROM coronavirus"]) 0)))
 
 (defn get-latest [database]
-  (pool-query database ["SELECT country, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(confirmed) AS confirmed FROM coronavirus
-  WHERE aggregated = 'CT' GROUP BY date, country ORDER BY date DESC LIMIT 1"]))
+  (let [last-update (get-last-update-date database)]
+    (pool-query database "SELECT CT.name, CT.iso3, CO.date, SUM(CO.tested) AS tested, SUM(CO.deaths) AS deaths, SUM(CO.recovered) AS recovered, SUM(CO.confirmed) AS confirmed
+    FROM coronavirus CO
+    INNER JOIN country CT ON CO.country = CT.id
+    WHERE date=?
+    GROUP BY CO.date, CO.country, CT.name, CT.iso3
+    ORDER BY CO.date" last-update)))
 
 (defn get-locations [database country_code timelines]
-  (let [all-query "SELECT index_id, country, province, location, recovered, confirmed, deaths, url, population, aggregated, date
-                    FROM coronavirus ORDER BY date DESC LIMIT 1"
-        country-code-query "SELECT CO.index_id, CT.iso3, CT.name, CO.province, CO.location, CO.recovered, CO.confirmed, CO.deaths, CO.url, CO.population, CO.aggregated, CO.date
+  (let [last-update (get-last-update-date database)
+        all-query "SELECT CO.index_id, Ct.iso3, CT.name, CO.state, CO.county, CO.location, CO.recovered, CO.confirmed, CO.deaths, CO.url, CO.population, CO.aggregated, CO.date
+                    FROM coronavirus CO
+                    INNER JOIN country CT ON CO.country = CT.id
+                    WHERE date=?
+                    ORDER BY Ct.iso3 ASC"
+        country-code-query "SELECT CO.index_id, CT.iso3, CT.name, CO.state, CO.county, CO.location, CO.recovered, CO.confirmed, CO.deaths, CO.url, CO.population, CO.aggregated, CO.date
                             FROM coronavirus CO
                             INNER JOIN country CT ON CO.country = CT.id
-                            WHERE CT.iso3 = ?
-                            ORDER BY date DESC LIMIT 1"
+                            WHERE CT.iso3 = ? AND date=?
+                            ORDER BY date DESC"
         query (if (nil? country_code)
-                (pool-query database all-query)
-                (pool-query database country-code-query country_code)
-                )]
+                (pool-query database all-query last-update)
+                (pool-query database [country-code-query country_code last-update]))]
     (if (nil? timelines)
       query
-      (map get-timeline-by-id (:index_id query)))))
+      (do
+        (let [index-timeline (get-timeline-by-id database (:index_id query))]
+          (prn query)
+
+
+          )))))
 
 (defn get-location-by-id [database id]
-  (pool-query database ["SELECT index_id, country, province, location, recovered, confirmed, deaths, url, population, aggregated, date, timeline FROM coronavirus
+  (pool-query database ["SELECT index_id, country, state, county, location, recovered, confirmed, deaths, url, population, aggregated, date, timeline FROM coronavirus
    WHERE timeline IN (SELECT recovered, confirmed, deaths, date FROM coronavirus WHERE index_id = ? ORDER BY date DESC) AND index_id = ?
    ORDER BY date DESC LIMIT 1"] [id id]))
 
@@ -53,14 +66,11 @@
     (if (>= i 0)
       (do
         (let [current-i (nth json i)
-              state-county (if (nil? (:county current-i))
-                             (:state current-i)
-                             (:county current-i))
               country-id (:id (first (get-country-id database (:country current-i))))
               return (jdbc/insert! database :coronavirus {:index_id   (:featureId current-i)
                                                           :country    country-id
-                                                          :province   state-county
-
+                                                          :state      (:state current-i)
+                                                          :county     (:county current-i)
                                                           :recovered  (:recovered current-i)
                                                           :confirmed  (:cases current-i)
                                                           :deaths     (:deaths current-i)
@@ -75,4 +85,5 @@
       added)))
 
 (defn delete-data [database date]
-  (pool-query database ["DELETE FROM coronavirus WHERE date = ?"] date))
+  (jdbc/delete! database :coronavirus ["date = ?" (jt/to-sql-date date)]))
+

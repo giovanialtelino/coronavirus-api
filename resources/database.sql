@@ -1,6 +1,6 @@
-CREATE SEQUENCE country_seq;
+create sequence country_seq;
 
-CREATE TABLE IF NOT EXISTS country (
+create TABLE IF NOT EXISTS country (
   id int NOT NULL DEFAULT NEXTVAL ('country_seq'),
   iso char(2) NOT NULL,
   name varchar(80) NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS country (
   PRIMARY KEY (id)
 ) ;
 
-INSERT INTO country (id, iso, name, nicename, iso3, numcode, phonecode) VALUES
+insert into country (id, iso, name, nicename, iso3, numcode, phonecode) values
 (1, 'AF', 'AFGHANISTAN', 'Afghanistan', 'AFG', 4, 93),
 (2, 'AL', 'ALBANIA', 'Albania', 'ALB', 8, 355),
 (3, 'DZ', 'ALGERIA', 'Algeria', 'DZA', 12, 213),
@@ -270,6 +270,8 @@ create TABLE coronavirus
  index_id INTEGER,
  country INTEGER REFERENCES country,
  province VARCHAR,
+ state VARCHAR,
+ county VARCHAR,
  location POINT,
  recovered INTEGER,
  confirmed INTEGER,
@@ -283,4 +285,4 @@ create TABLE coronavirus
  tested integer
  );
 
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+create EXTENSION IF NOT EXISTS "uuid-ossp";
