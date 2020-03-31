@@ -9,7 +9,7 @@ create TABLE IF NOT EXISTS country (
   numcode smallint DEFAULT NULL,
   phonecode int NOT NULL,
   PRIMARY KEY (id)
-) ;
+);
 
 insert into country (id, iso, name, nicename, iso3, numcode, phonecode) values
 (1, 'AF', 'AFGHANISTAN', 'Afghanistan', 'AFG', 4, 93),
@@ -264,6 +264,8 @@ insert into country (id, iso, name, nicename, iso3, numcode, phonecode) values
 (250, 'SX', 'SINT MAARTEN', 'Sint Maarten', 'SXM', '534', '1'),
 (251, 'SS', 'SOUTH SUDAN', 'South Sudan', 'SSD', '728', '211');
 
+create EXTENSION IF NOT EXISTS "uuid-ossp";
+
 create TABLE coronavirus
 (uuid_ uuid NOT NULL DEFAULT uuid_generate_v1(),
   CONSTRAINT pet_pkey_ PRIMARY KEY (uuid_),
@@ -284,5 +286,3 @@ create TABLE coronavirus
  aggregated VARCHAR(20),
  tested integer
  );
-
-create EXTENSION IF NOT EXISTS "uuid-ossp";
