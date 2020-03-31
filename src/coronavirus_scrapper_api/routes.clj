@@ -10,7 +10,7 @@
   [{{:keys [database]} :components}]
   (ring-resp/content-type
     (ring-resp/response
-      (str "Hello, please check https://github.com/giovanialtelino/coronavirus-scrapper-api to check some docs of this API /n The last updated happened in: " (database/get-last-update-date (:database database))))
+      (str "Hello, please check https://github.com/giovanialtelino/coronavirus-scrapper-api to check some docs of this API \n The last updated happened in: " (database/get-last-update-date (:database database))))
     "text/plain"))
 
 (defn get-latest
@@ -66,8 +66,8 @@
 (def common-interceptors [(body-params/body-params) bootstrap/html-body])
 
 (def routes #{["/" :get (conj common-interceptors `home-page) :route-name :index]
-              ["/v2/latest" :get (conj common-interceptors `get-latest) :route-name :get-latest]
-              ["/v2/locations" :get (conj common-interceptors `get-locations) :route-name :get-location]
-              ["/v2/locations/:id" :get (conj common-interceptors `get-location-id) :route-name :get-location-by-id]
+              ["/latest" :get (conj common-interceptors `get-latest) :route-name :get-latest]
+              ["/locations" :get (conj common-interceptors `get-locations) :route-name :get-location]
+              ["/locations/:id" :get (conj common-interceptors `get-location-id) :route-name :get-location-by-id]
               ["/postdata/:date" :post (conj common-interceptors `post-data) :route-name :post-location-json]
               ["/deletedata/:date" :delete (conj common-interceptors `delete-data) :route-name :delete-data-date]})

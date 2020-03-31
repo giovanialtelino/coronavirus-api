@@ -13,9 +13,9 @@
                       :maximum-pool-size  10
                       :pool-name          "corona"
                       :adapter            "postgresql"
-                      :username           "covid"
-                      :password           "covidpwd"
-                      :database-name      "altrunox"
+                      :username           (System/getenv "DATABASE_USR")
+                      :password           (System/getenv "DATABASE_PWD")
+                      :database-name      "postgresql"
                       :server-name        "localhost"
                       :port-number        5432
                       :register-mbeans    false})
@@ -31,9 +31,9 @@
                      :maximum-pool-size  10
                      :pool-name          "corona"
                      :adapter            "postgresql"
-                     :username           (System/getenv "DATABASE_USR")
-                     :password           (System/getenv "DATABASE_PWD")
-                     :database-name      (System/getenv "DATABASE_NAME")
+                     :username           "covid"
+                     :password           "covidpwd"
+                     :database-name      "altrunox"
                      :server-name        "localhost"
                      :port-number        5432
                      :register-mbeans    false})

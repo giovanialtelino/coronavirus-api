@@ -1,45 +1,92 @@
 # coronavirus-scrapper-api
 
-FIXME
+This API get data from the [coronadatascraper](https://github.com/covidatlas/coronadatascraper) project.  
+Process it, and save in a internal database for posterior use, which can be required as JSON.  
+The main idea was to use it as an API to be queried by people doing studies with the Covid-19 data.  
+It's also possible to require timelines for a country for example. Check the endpoints below.
 
-## Getting Started
+Also keep in mind that the data is posted by users, not updated automatically, so it's pretty much a "community" database.
+You may want to clone the project and use it internally. Fell free to clone this repo to do what you want, and also to suggest new endpoints.
 
-1. Start the application: `lein run`
-2. Go to [localhost:8080](http://localhost:8080/) to see: `Hello World!`
-3. Read your app's source code at src/coronavirus_scrapper_api/service.clj. Explore the docs of functions
-   that define routes and responses.
-4. Run your app's tests with `lein test`. Read the tests at test/coronavirus_scrapper_api/service_test.clj.
-5. Learn more! See the [Links section below](#links).
+##REST Endpoints
 
+"/"  
+Get the last update date (Year - Month - Day) and also the github link.
 
-## Configuration
+"/latest"  
+Sum the data of every country in the last updated date and return as below 
+```json
+{
+"date":	"2020-10-22T03:00:00Z",
+"tested":	2319,
+"deaths":	12080,
+"recovered":	85783,
+"confirmed":	283289
+}
+```
 
-To configure logging see config/logback.xml. By default, the app logs to stdout and logs/.
-To learn more about configuring Logback, read its [documentation](http://logback.qos.ch/documentation.html).
+"/locations"
+Return the data of the last update of every country.
+Can also request a single country using country_code as a query parameter, you should use a [iso3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) abbreviation, for example instead of "US" you should use "USA".
+Timelines can also be requested as a query parameter, just add timelines=true. You can also request a single country with a timeline.
 
+"/locations"  
+```json
+{
+"aggregated":	"county",
+"date":	"2020-10-22T03:00:00Z",
+"iso3":	"USA",
+"name":	"UNITED STATES",
+"deaths":	null,
+"county":	null,
+"state": "MD" ,
+"confirmed":	85,
+"recovered":	null,
+"population":	6045680,
+"url":	"https://opendata.arcgis.…89a701354d7fa6830b_0.csv",
+"index_id":	989,
+"location":	null,
+"tested":	null
+}
+```
 
-## Developing your service
+"/locations?timelines=true"  
+```json
+{"aggregated":	"county",
+"date":	"2020-10-22T03:00:00Z",
+"iso3":	"USA",
+"name":	"UNITED STATES",
+"deaths":	null,
+"county":	null,
+"state": "MD" ,
+"confirmed":	85,
+"recovered":	null,
+"population":	6045680,
+"url":	"https://opendata.arcgis.…89a701354d7fa6830b_0.csv",
+"index_id":	989,
+"location":	null,
+"tested":	null,
+"timelines": [{"recovered":	null,
+               "confirmed":	85,
+               "deaths":	null,
+               "tested":	null,
+               "date":	"2020-10-22T03:00:00Z"},
+              {}]
+}	
+```
 
-1. Start a new REPL: `lein repl`
-2. Start your service in dev-mode: `(def dev-serv (run-dev))`
-3. Connect your editor to the running REPL session.
-   Re-evaluated code will be seen immediately in the service.
+"/locations/:id"
+You can get a specific location using the index_id in the path_parameter, every request will also return the timeline.
 
-### [Docker](https://www.docker.com/) container support
+"/postdata/:date"
+The data to be saved in the internal database, should be posted as json, using something like Postman or Curl, since the coronadatascraper project don't save the date of their scrap in the json file, you should also specify as a path parameter the date of the json you are uploading, the date format that should be used is (YYYY-MM-DD).
+The file format should be the same used in the coronascrapper, and can be found in the Schema namespace.
+As response, you will get the json values which were added.
 
-1. Configure your service to accept incoming connections (edit service.clj and add  ::http/host "0.0.0.0" )
-2. Build an uberjar of your service: `lein uberjar`
-3. Build a Docker image: `sudo docker build -t coronavirus-scrapper-api .`
-4. Run your Docker image: `docker run -p 8080:8080 coronavirus-scrapper-api`
-
-### [OSv](http://osv.io/) unikernel support with [Capstan](http://osv.io/capstan/)
-
-1. Build and run your image: `capstan run -f "8080:8080"`
-
-Once the image it built, it's cached.  To delete the image and build a new one:
-
-1. `capstan rmi coronavirus-scrapper-api; capstan build`
-
-
-## Links
-* [Other Pedestal examples](http://pedestal.io/samples)
+An example of a curl post:  
+```
+curl -X POST -H "Content-Type: application/json" -d @./data.json  http://localhost:8080/postdata/2020-10-22
+```
+              
+"/deletedata/:date"      
+If for some reason the added data is wrong, you just need to pass a specific date to delete it, in the same format as the post request (YYYY-MM-DD).
