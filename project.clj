@@ -18,6 +18,7 @@
                  [org.postgresql/postgresql "42.2.9"]
                  [prismatic/schema "1.1.12"]
                  [hikari-cp "2.10.0"]
+                 [clj-postgresql "0.7.0"]
                  [ring/ring-core "1.8.0"]                 ]
   :min-lein-version "2.0.0"
   :resource-paths ["config", "resources"]

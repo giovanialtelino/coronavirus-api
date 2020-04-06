@@ -9,7 +9,7 @@ Also keep in mind that the data is posted by users, not updated automatically, s
 You may want to clone the project and use it internally. Fell free to clone this repo to do what you want, and also to suggest new endpoints.  
 I will try to keep a public API open while we are still dealing with the covid-19 issue.
 
-##REST Endpoints
+## REST Endpoints
 
 "/" **GET**  
 Get the last update date (Year - Month - Day) and also the github link.
@@ -93,15 +93,15 @@ curl -X POST -H "Content-Type: application/json" -d @./data.json  path/postdata/
 If for some reason the added data is wrong, you just need to pass a specific date to delete it, in the same format as the post request (YYYY-MM-DD).
 
 ----------------------------
-##Deploying you own API
-First, you must have a PostgreSQL database. Find the database.sql file in this project, inside the resources folder.  
+## Building your own API  
+First, you must have a PostgreSQL database. Find the [database.sql](resources/database.sql) file in this project, inside the resources folder.  
 You should run those queries to create the necessary tables.
 
-You can keep the api running with lein run or lein run-dev, Leiningen is needed.  
+You can keep the api running with lein run or lein run-dev, Leiningen is needed for this project.  
 As it is, the port which will serve the endpoint in production is 8888, if you wish to change it go to the [Components](src/coronavirus_scrapper_api/components.clj) namespace.
 To compile it just run **Lein Uberjar** and them run it as a standard java file, with java -jar, for example.  
 In production Java will look for environment variables for the database, DATABASE_USR and DATABASE_PWD, and also uses the default database name of "postgresql".
-If you wish to change something here go to the [Database](src/coronavirus_scrapper_api/components/database.clj) namespace, like path or port. 
+If you wish to change something here go to the [Database](src/coronavirus_scrapper_api/components/database.clj) namespace, like the path or port.
 
 --------------------------
 ### MIT License

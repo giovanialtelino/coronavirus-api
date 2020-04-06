@@ -1,6 +1,7 @@
 (ns coronavirus-scrapper-api.postgresql
   (:require
     [clojure.java.jdbc :as jdbc]
+    [clj-postgresql.core :as pg]
     [java-time :as jt]))
 
 (defn- pool-query

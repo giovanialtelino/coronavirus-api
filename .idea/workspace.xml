@@ -4,7 +4,9 @@
     <list default="true" id="d9db5220-cdd9-4ef6-8fe9-1f01600bb8f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resources/database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coronavirus-scrapper-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/coronavirus-scrapper-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coronavirus_scrapper_api/postgresql.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/coronavirus_scrapper_api/postgresql.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,10 +92,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1135" y="290" width="624" height="533" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585059367575">
+    <state x="1135" y="290" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586184022092">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="1135" y="290" width="624" height="533" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1585059367575" />
+    <state x="1135" y="290" width="624" height="551" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1586184022092" />
     <state x="1006" y="259" width="816" height="678" key="search.everywhere.popup" timestamp="1585684020324">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
