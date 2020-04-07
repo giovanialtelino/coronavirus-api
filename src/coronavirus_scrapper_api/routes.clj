@@ -20,6 +20,20 @@
       (cs/generate-string (database/get-latest (:database database))))
     "application/json"))
 
+(defn get-latest-country
+  [{{:keys [database]} :components}]
+  (ring-resp/content-type
+    (ring-resp/response
+      (cs/generate-string (database/get-latest-by-country (:database database))))
+    "application/json"))
+
+(defn get-latest-country-timeline
+  [{{:keys [database]} :components}]
+  (ring-resp/content-type
+    (ring-resp/response
+      (cs/generate-string (database/get-latest-by-country-with-timeline (:database database))))
+    "application/json"))
+
 ;country_code or timelines true or false
 (defn get-locations
   [{{:keys [country_code timelines]} :query-params
@@ -37,7 +51,7 @@
       (cs/generate-string (database/get-location-by-id (:database database) id)))
     "application/json"))
 
-; (database/post-data (:database database) date json)
+
 ;;Not sure why,  but if I try to extract the keys as below I get an error on the :json-params
 ;{{:keys [date]}     :path-params {:keys [database]} :components {:keys [json]}     :json-params}
 (defn post-data
@@ -50,9 +64,6 @@
       (ring-resp/response
         (cs/generate-string (database/post-data database date (utils/schema-parser (vec edn-data)))))
       "application/json")))
-
-;{:datasource #object[com.zaxxer.hikari.HikariDataSource 0x21f341f0 "HikariDataSource (corona)"]}
-
 
 (defn delete-data
   [{{:keys [date]}     :path-params
@@ -67,6 +78,8 @@
 
 (def routes #{["/" :get (conj common-interceptors `home-page) :route-name :index]
               ["/latest" :get (conj common-interceptors `get-latest) :route-name :get-latest]
+              ["/latest-country" :get (conj common-interceptors `get-latest-country) :route-name :get-latest-by-country]
+              ["/latest-country-timelines" :get (conj common-interceptors `get-latest-country-timeline) :route-name :get-latest-by-country-timeline]
               ["/locations" :get (conj common-interceptors `get-locations) :route-name :get-location]
               ["/locations/:id" :get (conj common-interceptors `get-location-id) :route-name :get-location-by-id]
               ["/postdata/:date" :post (conj common-interceptors `post-data) :route-name :post-location-json]
