@@ -26,6 +26,12 @@ Sum the data of every country in the last updated date and return as below
 }
 ```
 
+"/latest-country" **GET**
+Get the sum of the latest update by every country available.  
+
+"/latest-country-timelines" **GET**
+Get the sum of the latest update by every country available and also get the timeline from the start.
+
 "/locations" **GET**  
 Return the data of the last update of every country.
 Can also request a single country using country_code as a query parameter, you should use a [iso3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) abbreviation, for example instead of "US" you should use "USA".
