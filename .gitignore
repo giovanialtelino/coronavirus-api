@@ -14,5 +14,4 @@ pom.xml.asc
 .cpcache/
 .idea/
 /.idea/
-dumb-deploy.ssh
-deploy.ssh
+/resources/dumb-deploy.ssh
