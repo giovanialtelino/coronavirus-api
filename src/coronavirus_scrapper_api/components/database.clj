@@ -15,7 +15,7 @@
                       :adapter            "postgresql"
                       :username           (System/getenv "DATABASE_USR")
                       :password           (System/getenv "DATABASE_PWD")
-                      :database-name      "postgresql"
+                      :database-name      "postgres"
                       :server-name        "localhost"
                       :port-number        5432
                       :register-mbeans    false})

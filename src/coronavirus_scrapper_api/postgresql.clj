@@ -80,6 +80,7 @@
   (try
     (pg/point (first point-vector) (second point-vector))
     (catch Exception e
+      (prn e)
       nil)))
 
 (defn get-latest-by-country [database]

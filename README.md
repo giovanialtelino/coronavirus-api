@@ -106,7 +106,7 @@ You should run those queries to create the necessary tables.
 You can keep the api running with lein run or lein run-dev, Leiningen is needed for this project.  
 As it is, the port which will serve the endpoint in production is 8888, if you wish to change it go to the [Components](src/coronavirus_scrapper_api/components.clj) namespace.
 To compile it just run **Lein Uberjar** and them run it as a standard java file, with java -jar, for example.  
-In production Java will look for environment variables for the database, DATABASE_USR and DATABASE_PWD, and also uses the default database name of "postgresql".
+In production Java will look for environment variables for the database, DATABASE_USR and DATABASE_PWD, and also uses the default database name of "postgres".
 If you wish to change something here go to the [Database](src/coronavirus_scrapper_api/components/database.clj) namespace, like the path or port.
 
 --------------------------
