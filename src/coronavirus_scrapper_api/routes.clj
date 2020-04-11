@@ -11,7 +11,7 @@
   (ring-resp/content-type
     (ring-resp/response
       (str "Hello, please check https://github.com/giovanialtelino/coronavirus-scrapper-api to check some docs of this API \n The last updated happened in: " (database/get-last-update-date (:database database))))
-    "text/plain"))
+    "text/html"))
 
 (defn get-latest
   [{{:keys [database]} :components}]
@@ -51,29 +51,6 @@
       (cs/generate-string (database/get-location-by-id (:database database) id)))
     "application/json"))
 
-
-;;Not sure why,  but if I try to extract the keys as below I get an error on the :json-params
-;{{:keys [date]}     :path-params {:keys [database]} :components {:keys [json]}     :json-params}
-(defn post-data
-  [request]
-  (let [edn-data (:json-params request)
-        date (:date (:path-params request))
-        components (:components request)
-        database (:database (:database components))]
-    (ring-resp/content-type
-      (ring-resp/response
-        (cs/generate-string (database/post-data database date (utils/schema-parser (vec edn-data)))))
-      "application/json")))
-
-(defn delete-data
-  [{{:keys [date]}     :path-params
-    {:keys [database]} :components}]
-  (try
-    (database/delete-data (:database database) date)
-    (ring-resp/response "Data deleted")
-    (catch Exception e
-      (ring-resp/response (str "Error while deleting: " e)))))
-
 (def common-interceptors [(body-params/body-params) bootstrap/html-body])
 
 (def routes #{["/" :get (conj common-interceptors `home-page) :route-name :index]
@@ -81,6 +58,4 @@
               ["/latest-country" :get (conj common-interceptors `get-latest-country) :route-name :get-latest-by-country]
               ["/latest-country-timelines" :get (conj common-interceptors `get-latest-country-timeline) :route-name :get-latest-by-country-timeline]
               ["/locations" :get (conj common-interceptors `get-locations) :route-name :get-location]
-              ["/locations/:id" :get (conj common-interceptors `get-location-id) :route-name :get-location-by-id]
-              ["/postdata/:date" :post (conj common-interceptors `post-data) :route-name :post-location-json]
-              ["/deletedata/:date" :delete (conj common-interceptors `delete-data) :route-name :delete-data-date]})
+              ["/locations/:id" :get (conj common-interceptors `get-location-id) :route-name :get-location-by-id]})

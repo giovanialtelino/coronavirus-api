@@ -1,6 +1,7 @@
 # coronavirus-scrapper-api
 
-# Moving project to get data from the [JHU](https://github.com/CSSEGISandData/COVID-19), ignore the readme for a while or move to the older branch 
+# CHANGING PROJECT TO GET DATA FROM THE [JHU](https://github.com/CSSEGISandData/COVID-19), ignore the readme for a while or use the older branch from the corona scrapper
+
 
 This API get data from the [coronadatascraper](https://github.com/covidatlas/coronadatascraper) project.  
 Process it, and save in a internal database for posterior use, which can be required as JSON.  
