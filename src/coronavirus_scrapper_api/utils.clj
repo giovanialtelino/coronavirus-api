@@ -2,20 +2,18 @@
   (:require [schema.core :as s]))
 
 (def corona-cases
-  {(s/optional-key :county)      s/Str
-   (s/optional-key :state)       s/Str
-   (s/optional-key :aggregate)   s/Str
-   (s/optional-key :tested)      s/Int
-   (s/optional-key :recovered)   s/Int
-   :cases                        s/Int
-   (s/optional-key :deaths)      s/Int
-   :url                          s/Str
-   :country                      s/Str
-   :rating                       s/Num
-   :active                       s/Int
-   (s/optional-key :featureId)   s/Int
-   (s/optional-key :population)  s/Int
-   (s/optional-key :coordinates) [s/Num]})
+  {(s/optional-key :fips)           s/Int
+   (s/optional-key :admin2)         s/Str
+   (s/optional-key :province_state) s/Str
+   :country_region                  s/Str
+   (s/optional-key :last_update)    s/Any
+   (s/optional-key :lat)            s/Num
+   (s/optional-key :long)           s/Num
+   :confirmed                       s/Num
+   :deaths                          s/Num
+   :recovered                       s/Num
+   :active                          s/Num
+   })
 
 (defn- remove-i [v i]
   (into (subvec v 0 i) (subvec v (inc i))))
@@ -48,5 +46,3 @@
     (if (empty? invalid)
       edn-map
       (cleaned-map edn-map invalid))))
-
-;{:county "Illinois County", :cases 0, :tested 0, :state "IL", :country "USA", :url "http://www.dph.illinois.gov/sites/default/files/COVID19/COVID19CountyResults.json", :rating 0.43902439024390244, :active 0}

@@ -4,7 +4,8 @@
             [coronavirus-scrapper-api.postgresql :as database]
             [cheshire.core :as cs]
             [ring.util.response :as ring-resp]
-            [coronavirus-scrapper-api.utils :as utils]))
+            [coronavirus-scrapper-api.utils :as utils]
+            [coronavirus-scrapper-api.slurper :as slurper]))
 
 (defn home-page
   [{{:keys [database]} :components}]
