@@ -274,7 +274,7 @@ create TABLE coronavirus
     index_id INTEGER,
     country INTEGER REFERENCES country,
     province_state VARCHAR,
-    Country_Region VARCHAR,
+    country_region VARCHAR,
     last_update DATE,
     date DATE,
     location POINT,
