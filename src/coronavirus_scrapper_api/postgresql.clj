@@ -2,7 +2,11 @@
   (:require
     [clojure.java.jdbc :as jdbc]
     [clj-postgresql.core :as pg]
-    [java-time :as jt]))
+    [java-time :as jt]
+    [coronavirus-scrapper-api.slurper :as slurper]
+    [clojure.core.async :as async]))
+
+(def last-update (atom nil))
 
 (defn- pool-query
   ([conn query]
@@ -27,7 +31,35 @@
 (defn get-last-update-date [database]
   (:max (nth (pool-query database ["SELECT MAX (date) FROM coronavirus"]) 0)))
 
+(defn- update-last-update [database]
+  (let [last-date (jt/local-date-time (get-last-update-date database))
+        date-to-atom (if (nil? last-date)
+                       (jt/local-date-time 2020 01 22)
+                       last-date)]
+    (reset! last-update date-to-atom)
+    @last-update))
+
+(defn- get-last-update [database]
+  (let [last-update @last-update]
+    (if (nil? last-update)
+      (update-last-update database)
+      last-update)))
+
+(defn- check-if-update-needed [database]
+  (let [local-last-update (get-last-update database)
+        plus-3 (jt/plus local-last-update (jt/hours 3))
+        now (jt/local-date-time)]
+    (if (jt/after? now plus-3)
+      (do
+        (reset! last-update (jt/local-date-time))
+        (slurper/slurp-date-vector local-last-update))
+      (do
+        "No need to update"))))
+;coronavirus-scrapper-api.postgresql=> (jt/plus @last-update (jt/hours 8))
+
+;;;helpers above
 (defn get-latest [database]
+  (async/go (check-if-update-needed database))
   (let [last-update (get-last-update-date database)]
     (first (pool-query database "SELECT CO.date, SUM (CO.tested) AS tested, SUM (CO.deaths) AS deaths, SUM (CO.recovered) AS recovered, SUM (CO.confirmed) AS confirmed
     FROM coronavirus CO
@@ -44,6 +76,7 @@
       map-with-timeline)))
 
 (defn get-locations [database country_code timelines]
+  (async/go (check-if-update-needed database))
   (let [last-update (get-last-update-date database)
         all-query " SELECT CO.index_id, Ct.iso3, CT.name, CO.state, CO.county, CO.location, CO.recovered, CO.confirmed, CO.tested, CO.deaths, CO.url, CO.population, CO.aggregated, CO.date
                     FROM coronavirus CO
@@ -63,6 +96,7 @@
       (loop-and-merge-maps query database))))
 
 (defn get-location-by-id [database id]
+  (async/go (check-if-update-needed database))
   (let [id-integer (Integer/parseInt id)
         last-update (get-last-update-date database)
         without-timeline (first (pool-query database [" SELECT CO.index_id, Ct.iso3, CT.name, CO.state, CO.county, CO.location, CO.recovered, CO.confirmed, CO.deaths, CO.tested CO.url, CO.population, CO.aggregated, CO.date
@@ -74,6 +108,7 @@
     (merge without-timeline {:timelines index-timeline})))
 
 (defn- get-country-id [database country-abrev]
+  (async/go (check-if-update-needed database))
   (pool-query database " SELECT id FROM country WHERE iso3 = ? " country-abrev))
 
 (defn- try-to-get-point [point-vector]
@@ -84,6 +119,7 @@
       nil)))
 
 (defn get-latest-by-country [database]
+  (async/go (check-if-update-needed database))
   (pool-query database "SELECT CO.date, SUM (CO.tested) AS tested, SUM (CO.deaths) AS deaths, SUM (CO.recovered) AS recovered,
                       SUM (CO.confirmed) AS confirmed, CT.iso3 AS iso3, CT.name AS name, CO.country AS country_index
                       FROM coronavirus CO
@@ -93,6 +129,7 @@
                       ORDER BY CT.iso3 ASC" (get-last-update-date database)))
 
 (defn get-latest-by-country-with-timeline [database]
+  (async/go (check-if-update-needed database))
   (let [without-timeline (into [] (get-latest-by-country database))]
     (loop [i 0
            map-with-timeline without-timeline]
@@ -130,5 +167,4 @@
 
 (defn delete-data [database date]
   (jdbc/delete! database :coronavirus [" date = ? " (jt/to-sql-date date)]))
-
 

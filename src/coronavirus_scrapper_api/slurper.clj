@@ -1,11 +1,15 @@
 (ns coronavirus-scrapper-api.slurper
   (:require [java-time :as jt]
-            [coronavirus-scrapper-api.postgresql :as database]
             [clojure.data.csv :as csv]
             [clojure.string :as clo-str]))
 
 ;Slurper? What a name
-(def starter-date (jt/local-date 2020 01 22))
+;(def starter-date (jt/local-date 2020 01 22))
+;(defn get-last-update [database starter-date]
+;(let [x (database/get-last-update-date database)]
+;(if (nil? x)
+;  starter-date
+;  x) ) )
 
 ;errr 1 hour to find butlast....
 (defn check-last-date [date-vector]
@@ -19,16 +23,10 @@
   (str "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/" (jt/format "MM-dd-YYYY" date) ".csv"))
 
 ; (database/get-last-update-date database)
-(defn get-last-update [database starter-date]
-  (let [x nil]
-    (if (nil? x)
-      starter-date
-      x)))
 
-(defn get-date-vector-until-today [database]
-  (let [today (jt/local-date)
-        starter-date starter-date
-        last-update (get-last-update database starter-date)]
+
+(defn get-date-vector-until-today [last-update]
+  (let [today (jt/local-date-time)]
     (loop [current-date last-update
            missing-dates []]
       (if (jt/after? current-date today)
@@ -51,8 +49,7 @@
                  "Admin2" :admin2
                  "Tested" :tested
                  :nil
-                 )
-        ]
+                 )]
     (if (nil? tested)
       (prn (str "PARSED INTO NIL" k)))
     [tested]))
@@ -84,11 +81,9 @@
         (recur (conj csv-mapped (add-keys cleaned-k (nth without-keywords i))) (inc i))
         csv-mapped))))
 
-(defn slurp-date-vector [database]
-  (let [dates-vector (get-date-vector-until-today database)
+(defn slurp-date-vector [last-update]
+  (let [dates-vector (get-date-vector-until-today last-update)
         every-csv-link (check-last-date (map github-url dates-vector))
         every-slurp (map slurp every-csv-link)
-        parsed-to-csv (map csv/read-csv every-slurp)
-        mapped (map csv-to-clojure-map parsed-to-csv)]
-    (prn (first mapped))
-    ))
+        parsed-to-csv (map csv/read-csv every-slurp)]
+    (map csv-to-clojure-map parsed-to-csv)))
