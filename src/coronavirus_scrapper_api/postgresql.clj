@@ -32,10 +32,10 @@
   (:max (nth (pool-query database ["SELECT MAX (date) FROM coronavirus"]) 0)))
 
 (defn- update-last-update [database]
-  (let [last-date (jt/local-date-time (get-last-update-date database))
+  (let [last-date (get-last-update-date database)
         date-to-atom (if (nil? last-date)
                        (jt/local-date-time 2020 01 22)
-                       last-date)]
+                       (jt/local-date-time last-date))]
     (reset! last-update date-to-atom)
     @last-update))
 
@@ -45,6 +45,36 @@
       (update-last-update database)
       last-update)))
 
+(defn- try-to-get-point [point-vector]
+  (try
+    (pg/point (Double/parseDouble (first point-vector)) (Double/parseDouble (second point-vector)))
+    (catch Exception e
+      nil)))
+
+(defn post-data [database date json]
+  (loop [f (dec (count json))]
+    (if (<= 0 f)
+      (do
+        (loop [i (dec (count (nth json f)))]
+          (if (<= 0 i)
+            (do
+              (let [current-i (nth (nth json f) i)
+                    point-vector (try-to-get-point [(:lat current-i) (:long current-i)])
+                    return (jdbc/insert! database :coronavirus {:admin2         (:admin2 current-i)
+                                                                :fips           (:fips current-i)
+                                                                :province_state (:province_state current-i)
+                                                                :country_region (:country_region current-i)
+                                                                :last_update    (:last_update current-i)
+                                                                :date           (jt/to-sql-date date)
+                                                                :location       point-vector
+                                                                :recovered      (:recovered current-i)
+                                                                :confirmed      (:confirmed current-i)
+                                                                :deaths         (:deaths current-i)
+                                                                :active         (:active current-i)
+                                                                :tested         (:tested current-i)})]
+                (recur (dec i))))))
+        (recur (dec f))))))
+
 (defn- check-if-update-needed [database]
   (let [local-last-update (get-last-update database)
         plus-3 (jt/plus local-last-update (jt/hours 3))
@@ -52,14 +82,15 @@
     (if (jt/after? now plus-3)
       (do
         (reset! last-update (jt/local-date-time))
-        (slurper/slurp-date-vector local-last-update))
+        (post-data database now (slurper/slurp-date-vector local-last-update)))
       (do
         "No need to update"))))
 ;coronavirus-scrapper-api.postgresql=> (jt/plus @last-update (jt/hours 8))
 
 ;;;helpers above
 (defn get-latest [database]
-  (async/go (check-if-update-needed database))
+  ;(async/go (check-if-update-needed database))
+  (check-if-update-needed database)
   (let [last-update (get-last-update-date database)]
     (first (pool-query database "SELECT CO.date, SUM (CO.tested) AS tested, SUM (CO.deaths) AS deaths, SUM (CO.recovered) AS recovered, SUM (CO.confirmed) AS confirmed
     FROM coronavirus CO
@@ -111,12 +142,6 @@
   (async/go (check-if-update-needed database))
   (pool-query database " SELECT id FROM country WHERE iso3 = ? " country-abrev))
 
-(defn- try-to-get-point [point-vector]
-  (try
-    (pg/point (first point-vector) (second point-vector))
-    (catch Exception e
-      (prn e)
-      nil)))
 
 (defn get-latest-by-country [database]
   (async/go (check-if-update-needed database))
@@ -139,31 +164,7 @@
           (recur (inc i) (assoc map-with-timeline i merged-map)))
         map-with-timeline))))
 
-(defn post-data [database date json]
-  (loop [i (dec (count json))
-         added []]
-    (if (>= i 0)
-      (do
-        (let [current-i (nth json i)
-              point-vector (try-to-get-point (:coordinates current-i))
-              country-id (:id (first (get-country-id database (:country current-i))))
-              return (jdbc/insert! database :coronavirus {:index_id   (:featureId current-i)
-                                                          :country    country-id
-                                                          :state      (:state current-i)
-                                                          :county     (:county current-i)
-                                                          :recovered  (:recovered current-i)
-                                                          :confirmed  (:cases current-i)
-                                                          :deaths     (:deaths current-i)
-                                                          :url        (:url current-i)
-                                                          :location   point-vector
-                                                          :population (:population current-i)
-                                                          :aggregated (:aggregate current-i)
-                                                          :tested     (:tested current-i)
-                                                          :rating     (:rating current-i)
-                                                          :active     (:active current-i)
-                                                          :date       (jt/to-sql-date date)})]
-          (recur (dec i) (into added return))))
-      added)))
+
 
 (defn delete-data [database date]
   (jdbc/delete! database :coronavirus [" date = ? " (jt/to-sql-date date)]))

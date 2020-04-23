@@ -1,0 +1,7 @@
+17:00:28.801 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+17:00:29.270 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+17:00:29.328 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @7062ms to org.eclipse.jetty.util.log.Slf4jLog
+17:00:29.647 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.6+10-post-Ubuntu-1ubuntu119.10.1
+17:00:29.748 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@4e951fb1{/,null,AVAILABLE}
+17:00:29.772 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@552bee2f{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+17:00:29.773 [main] INFO  org.eclipse.jetty.server.Server  - Started @7507ms

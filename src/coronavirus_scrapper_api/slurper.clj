@@ -1,6 +1,7 @@
 (ns coronavirus-scrapper-api.slurper
   (:require [java-time :as jt]
             [clojure.data.csv :as csv]
+            [clojure.string :as cstr]
             [clojure.string :as clo-str]))
 
 ;Slurper? What a name
@@ -24,7 +25,6 @@
 
 ; (database/get-last-update-date database)
 
-
 (defn get-date-vector-until-today [last-update]
   (let [today (jt/local-date-time)]
     (loop [current-date last-update
@@ -37,7 +37,9 @@
   (let [k (clo-str/trim (str k-name))
         tested (case k
                  "Province/State" :province_state
+                 "Province_State" :province_state
                  "Country/Region" :country_region
+                 "Country_Region" :country_region
                  "Last Update" :last_update
                  "Lat" :lat
                  "Long_" :long
@@ -54,6 +56,34 @@
       (prn (str "PARSED INTO NIL" k)))
     [tested]))
 
+(defn- mapper-to-int [val-to-int k]
+  (if (or (= :fips k) (= :recovered k) (= :confirmed k) (= :deaths k) (= :active k) (= :tested k))
+    (try
+      (Integer/parseInt val-to-int)
+      (catch Exception e
+        nil
+        ))
+    val-to-int))
+
+;although only some of the first dates have the issue of the year only having two numbers instead of four, a hack was needed for the year field
+;also the date type was changed again later.....
+(defn- mapper-to-date [val-to-date k]
+  (if (= :last_update k)
+    (do
+      (try
+        (jt/to-sql-date (jt/local-date-time val-to-date))
+        (catch Exception e
+          (let [splitted (cstr/split val-to-date #"/")
+                day (Integer/parseInt (second splitted))
+                month (Integer/parseInt (first splitted))
+                un-year (first (cstr/split (last splitted) #" "))
+                year (Integer/parseInt (if (= 4 un-year)
+                                         un-year
+                                         (str "20" un-year)))]
+
+            (jt/to-sql-date (jt/local-date year month day))))))
+    val-to-date))
+
 (defn- clean-keys [k]
   (loop [clean-k []
          i 0]
@@ -66,7 +96,7 @@
   (loop [new-map {}
          i 0]
     (if (< i (count k))
-      (recur (into new-map {(nth k i) (nth v i)}) (inc i))
+      (recur (into new-map {(nth k i) (mapper-to-date (mapper-to-int (nth v i) (nth k i)) (nth k i))}) (inc i))
       new-map)))
 
 (defn csv-to-clojure-map [c]

@@ -271,8 +271,6 @@ create TABLE coronavirus
     CONSTRAINT pet_pkey_ PRIMARY KEY (uuid_),
     admin2 VARCHAR(50),
     fips INTEGER,
-    index_id INTEGER,
-    country INTEGER REFERENCES country,
     province_state VARCHAR,
     country_region VARCHAR,
     last_update DATE,
