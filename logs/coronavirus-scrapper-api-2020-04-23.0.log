@@ -1357,3 +1357,24 @@ Caused by: java.lang.IndexOutOfBoundsException: null
 17:01:34.426 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3c346c45{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
 17:01:34.426 [main] INFO  org.eclipse.jetty.server.Server  - Started @5143ms
 17:02:50.919 [qtp1125514779-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+20:37:59.949 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+20:38:00.516 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+20:38:00.604 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @9857ms to org.eclipse.jetty.util.log.Slf4jLog
+20:38:00.942 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+20:38:01.045 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@75a226ea{/,null,AVAILABLE}
+20:38:01.084 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3c346c45{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+20:38:01.085 [main] INFO  org.eclipse.jetty.server.Server  - Started @10338ms
+20:38:10.171 [qtp1125514779-31] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+20:38:29.417 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+20:38:29.684 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+20:38:29.724 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4311ms to org.eclipse.jetty.util.log.Slf4jLog
+20:38:29.963 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+20:38:29.999 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@7aa3857b{/,null,AVAILABLE}
+20:38:30.013 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@349f3ff7{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+20:38:30.013 [main] INFO  org.eclipse.jetty.server.Server  - Started @4600ms
+20:38:33.256 [qtp804982032-30] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+20:38:34.217 [qtp804982032-27] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+20:38:34.942 [qtp804982032-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+20:38:35.679 [qtp804982032-31] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+20:59:06.278 [qtp804982032-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+21:45:31.413 [qtp804982032-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}

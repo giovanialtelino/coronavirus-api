@@ -21,11 +21,27 @@
       (cs/generate-string (database/get-latest (:database database))))
     "application/json"))
 
+(defn get-all-by-date
+  [{{:keys [database]} :components
+    {:keys [date]}     :path-params}]
+  (ring-resp/content-type
+    (ring-resp/response
+      (cs/generate-string (database/get-all-by-date (:database database) date)))
+    "application/json"))
+
 (defn get-latest-country
   [{{:keys [database]} :components}]
   (ring-resp/content-type
     (ring-resp/response
       (cs/generate-string (database/get-latest-by-country (:database database))))
+    "application/json"))
+
+(defn get-latest-country-date
+  [{{:keys [database]} :components
+    {:keys [date]}     :path-params}]
+  (ring-resp/content-type
+    (ring-resp/response
+      (cs/generate-string (database/get-latest-by-country-date (:database database) date)))
     "application/json"))
 
 (defn get-latest-country-timeline
@@ -37,26 +53,27 @@
 
 ;country_code or timelines true or false
 (defn get-locations
-  [{{:keys [country_code timelines]} :query-params
-    {:keys [database]}               :components}]
+  [{{:keys [country_region province_state date timelines]} :query-params
+    {:keys [database]}                                     :components}]
   (ring-resp/content-type
     (ring-resp/response
-      (cs/generate-string (database/get-locations (:database database) country_code timelines)))
+      (cs/generate-string (database/get-locations (:database database) country_region province_state timelines date)))
     "application/json"))
 
-(defn get-location-id
-  [{{:keys [id]}       :path-params
-    {:keys [database]} :components}]
+(defn get-search-variables
+  [{{:keys [database]} :components}]
   (ring-resp/content-type
     (ring-resp/response
-      (cs/generate-string (database/get-location-by-id (:database database) id)))
+      (cs/generate-string (database/get-search-variables (:database database))))
     "application/json"))
 
 (def common-interceptors [(body-params/body-params) bootstrap/html-body])
 
 (def routes #{["/" :get (conj common-interceptors `home-page) :route-name :index]
               ["/latest" :get (conj common-interceptors `get-latest) :route-name :get-latest]
+              ["/all-date/:date" :get (conj common-interceptors `get-all-by-date) :route-name :get-all-by-date]
               ["/latest-country" :get (conj common-interceptors `get-latest-country) :route-name :get-latest-by-country]
+              ["/latest-country/:date" :get (conj common-interceptors `get-latest-country-date) :route-name :get-latest-by-country-by-date]
               ["/latest-country-timelines" :get (conj common-interceptors `get-latest-country-timeline) :route-name :get-latest-by-country-timeline]
-              ["/locations" :get (conj common-interceptors `get-locations) :route-name :get-location]
-              ["/locations/:id" :get (conj common-interceptors `get-location-id) :route-name :get-location-by-id]})
+              ["/search-variables" :get (conj common-interceptors `get-search-variables) :route-name :get-search-variables]
+              ["/locations" :get (conj common-interceptors `get-locations) :route-name :get-location]})

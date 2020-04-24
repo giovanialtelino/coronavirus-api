@@ -1,8 +1,7 @@
 (ns coronavirus-scrapper-api.slurper
   (:require [java-time :as jt]
             [clojure.data.csv :as csv]
-            [clojure.string :as cstr]
-            [clojure.string :as clo-str]))
+            [clojure.string :as cstr]))
 
 ;Slurper? What a name
 ;(def starter-date (jt/local-date 2020 01 22))
@@ -34,13 +33,14 @@
         (recur (jt/plus current-date (jt/days 1)) (into missing-dates [current-date]))))))
 
 (defn- find-correct-key [k-name]
-  (let [k (clo-str/trim (str k-name))
+  (let [k (cstr/trim (str k-name))
         tested (case k
                  "Province/State" :province_state
                  "Province_State" :province_state
                  "Country/Region" :country_region
                  "Country_Region" :country_region
                  "Last Update" :last_update
+                 "Last_Update" :last_update
                  "Lat" :lat
                  "Long_" :long
                  "Confirmed" :confirmed
@@ -73,15 +73,20 @@
       (try
         (jt/to-sql-date (jt/local-date-time val-to-date))
         (catch Exception e
-          (let [splitted (cstr/split val-to-date #"/")
-                day (Integer/parseInt (second splitted))
-                month (Integer/parseInt (first splitted))
-                un-year (first (cstr/split (last splitted) #" "))
-                year (Integer/parseInt (if (= 4 un-year)
-                                         un-year
-                                         (str "20" un-year)))]
-
-            (jt/to-sql-date (jt/local-date year month day))))))
+          (if (cstr/includes? val-to-date "/")
+            (let [splitted (cstr/split val-to-date #"/")
+                  day (Integer/parseInt (second splitted))
+                  month (Integer/parseInt (first splitted))
+                  un-year (first (cstr/split (last splitted) #" "))
+                  year (Integer/parseInt (if (= 4 (count un-year))
+                                           un-year
+                                           (str "20" un-year)))]
+              (jt/to-sql-date (jt/local-date year month day)))
+            (let [splitted (cstr/split val-to-date #"-")
+                  day (Integer/parseInt (first (cstr/split (last splitted) #" ")))
+                  month (Integer/parseInt (second splitted))
+                  year (Integer/parseInt (first splitted))]
+              (jt/to-sql-date (jt/local-date year month day)))))))
     val-to-date))
 
 (defn- clean-keys [k]
