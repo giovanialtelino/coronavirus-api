@@ -4,14 +4,13 @@
             [coronavirus-scrapper-api.postgresql :as database]
             [cheshire.core :as cs]
             [ring.util.response :as ring-resp]
-            [coronavirus-scrapper-api.utils :as utils]
             [coronavirus-scrapper-api.slurper :as slurper]))
 
 (defn home-page
   [{{:keys [database]} :components}]
   (ring-resp/content-type
     (ring-resp/response
-      (str "Hello, please check https://github.com/giovanialtelino/coronavirus-scrapper-api to check some docs of this API \n The last updated happened in: " (database/get-last-update-date (:database database))))
+      (str "Hello, please check https://github.com/giovanialtelino/coronavirus-scrapper-api to check some docs of this API \n The last updated happened in: " (database/get-last-update-date-github (:database database))))
     "text/html"))
 
 (defn get-latest
@@ -67,6 +66,14 @@
       (cs/generate-string (database/get-search-variables (:database database))))
     "application/json"))
 
+(defn retroactive-data
+  [{{:keys [database]} :components
+    {:keys [pwd date]} :path-params}]
+  (ring-resp/content-type
+    (ring-resp/response
+      (cs/generate-string (database/retroactive-slurper (:database database) pwd date)))
+    "text/html"))
+
 (def common-interceptors [(body-params/body-params) bootstrap/html-body])
 
 (def routes #{["/" :get (conj common-interceptors `home-page) :route-name :index]
@@ -76,4 +83,5 @@
               ["/latest-country/:date" :get (conj common-interceptors `get-latest-country-date) :route-name :get-latest-by-country-by-date]
               ["/latest-country-timelines" :get (conj common-interceptors `get-latest-country-timeline) :route-name :get-latest-by-country-timeline]
               ["/search-variables" :get (conj common-interceptors `get-search-variables) :route-name :get-search-variables]
-              ["/locations" :get (conj common-interceptors `get-locations) :route-name :get-location]})
+              ["/locations" :get (conj common-interceptors `get-locations) :route-name :get-location]
+              ["/retroactive/:pwd/:date" :delete (conj common-interceptors `retroactive-data) :route-name :retroactive]})

@@ -1,7 +1,8 @@
 (ns coronavirus-scrapper-api.slurper
   (:require [java-time :as jt]
             [clojure.data.csv :as csv]
-            [clojure.string :as cstr]))
+            [clojure.string :as cstr]
+            [coronavirus-scrapper-api.utils :as utils]))
 
 ;Slurper? What a name
 ;(def starter-date (jt/local-date 2020 01 22))
@@ -50,7 +51,7 @@
                  "FIPS" :fips
                  "Admin2" :admin2
                  "Tested" :tested
-                 :nil
+                 (keyword k)
                  )]
     (if (nil? tested)
       (prn (str "PARSED INTO NIL" k)))
@@ -71,7 +72,8 @@
   (if (= :last_update k)
     (do
       (try
-        (jt/to-sql-date (jt/local-date-time val-to-date))
+        (do
+          (jt/to-sql-date (jt/local-date-time val-to-date)))
         (catch Exception e
           (if (cstr/includes? val-to-date "/")
             (let [splitted (cstr/split val-to-date #"/")
@@ -81,12 +83,16 @@
                   year (Integer/parseInt (if (= 4 (count un-year))
                                            un-year
                                            (str "20" un-year)))]
-              (jt/to-sql-date (jt/local-date year month day)))
+              (do
+
+                (jt/to-sql-date (jt/local-date year month day))))
             (let [splitted (cstr/split val-to-date #"-")
                   day (Integer/parseInt (first (cstr/split (last splitted) #" ")))
                   month (Integer/parseInt (second splitted))
                   year (Integer/parseInt (first splitted))]
-              (jt/to-sql-date (jt/local-date year month day)))))))
+              (do
+
+                (jt/to-sql-date (jt/local-date year month day))))))))
     val-to-date))
 
 (defn- clean-keys [k]

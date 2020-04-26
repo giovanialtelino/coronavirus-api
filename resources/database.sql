@@ -274,7 +274,6 @@ create TABLE coronavirus
     province_state VARCHAR,
     country_region VARCHAR,
     last_update DATE,
-    date DATE,
     location POINT,
     recovered INTEGER,
     confirmed INTEGER,
