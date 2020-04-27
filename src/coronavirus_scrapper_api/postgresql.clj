@@ -20,18 +20,18 @@
                               result))))
 
 (defn- get-timeline-by-country [database country-code date]
-  (into [] (drop 1 (pool-query database ["SELECT last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+  (into [] (pool-query database ["SELECT last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
    FROM coronavirus
    WHERE country_region = ? AND last_update < ?
    GROUP BY last_update
-   ORDER BY last_update DESC" country-code date]))))
+   ORDER BY last_update DESC" country-code date])))
 
 (defn- get-timeline-by-state [database state-code date]
-  (into [] (drop 1 (pool-query database ["SELECT last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+  (into [] (pool-query database ["SELECT last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
    FROM coronavirus
    WHERE province_state = ? AND last_update < ?
    GROUP BY last_update
-   ORDER BY last_update DESC" state-code date]))))
+   ORDER BY last_update DESC" state-code date])))
 
 (defn get-last-update-date-github [database]
   (:max (nth (pool-query database ["SELECT MAX (file_date) FROM coronavirus"]) 0)))
@@ -44,7 +44,7 @@
     (reset! last-update date-to-atom)
     @last-update))
 
-(defn- get-last-update [database]
+(defn get-last-update [database]
   (let [last-update @last-update]
     (if (nil? last-update)
       (update-last-update database)
@@ -133,20 +133,20 @@
   (let [search-date (if (nil? date)
                       (get-last-update-date-github database)
                       (utils/date-checker-parser date))
-        country-query "SELECT country_region, file_date, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+        country-query "SELECT country_region, file_date, last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
                         FROM coronavirus
                         WHERE file_date = ? AND country_region = ?
-                        GROUP BY country_region, file_date
+                        GROUP BY country_region, file_date, last_update
                         ORDER BY country_region ASC"
-        state-query "SELECT province_state, file_date, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+        state-query "SELECT province_state, file_date, last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
                         FROM coronavirus
                         WHERE file_date = ? AND province_state = ?
-                        GROUP BY province_state, file_date
+                        GROUP BY province_state, file_date, last_update
                         ORDER BY province_state ASC"
-        country-state-query "SELECT province_state, country_region, file_date, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+        country-state-query "SELECT province_state, country_region, last_update, file_date, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
                         FROM coronavirus
                         WHERE file_date = ? AND province_state = ? AND country_region = ?
-                        GROUP BY province_state, file_date, country_region
+                        GROUP BY province_state, file_date, country_region, last_update
                         ORDER BY country_region ASC, province_state ASC"
         query-result (into [] (cond
                                 (and (not (nil? country_region)) (not (nil? province_state))) (check-timelines-province database timelines search-date (into [] (pool-query database [country-state-query search-date province_state country_region])))
@@ -156,20 +156,20 @@
 
 (defn get-latest-by-country [database]
   (async/go (check-if-update-needed database))
-  (pool-query database "SELECT file_date, country_region, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested,
+  (pool-query database "SELECT file_date, last_update, country_region, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested,
                         SUM(active) as active
                         FROM coronavirus
                         WHERE file_date =?
-                        GROUP BY country_region, file_date
+                        GROUP BY country_region, file_date, last_update
                         ORDER BY country_region DESC" (get-last-update-date-github database)))
 
 (defn get-latest-by-country-date [database date]
   (async/go (check-if-update-needed database))
-  (pool-query database "SELECT file_date, country_region, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested,
+  (pool-query database "SELECT file_date, last_update, country_region, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested,
                         SUM(active) as active
                         FROM coronavirus
                         WHERE file_date =?
-                        GROUP BY country_region, file_date
+                        GROUP BY country_region, file_date, last_update
                         ORDER BY country_region DESC" (utils/date-checker-parser date)))
 
 (defn get-latest-by-country-with-timeline [database]
@@ -187,7 +187,7 @@
   (into [] (map :province_state (pool-query database "SELECT DISTINCT(province_state) FROM coronavirus ORDER BY province_state ASC"))))
 
 (defn get-search-variables [database]
-  {:dates          (all-dates database)
+  {:date           (all-dates database)
    :country_region (all-countries database)
    :province_state (all-states database)})
 

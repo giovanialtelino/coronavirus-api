@@ -10,7 +10,7 @@
   [{{:keys [database]} :components}]
   (ring-resp/content-type
     (ring-resp/response
-      (str "Hello, please check https://github.com/giovanialtelino/coronavirus-scrapper-api to check some docs of this API \n The last updated happened in: " (database/get-last-update-date-github (:database database))))
+      (str "Hello, please check https://github.com/giovanialtelino/coronavirus-scrapper-api to check some docs of this API \n The last updated happened in: " (database/get-last-update (:database database))))
     "text/html"))
 
 (defn get-latest
@@ -80,7 +80,7 @@
               ["/latest" :get (conj common-interceptors `get-latest) :route-name :get-latest]
               ["/all-date/:date" :get (conj common-interceptors `get-all-by-date) :route-name :get-all-by-date]
               ["/latest-country" :get (conj common-interceptors `get-latest-country) :route-name :get-latest-by-country]
-              ["/latest-country/:date" :get (conj common-interceptors `get-latest-country-date) :route-name :get-latest-by-country-by-date]
+              ["/all-country/:date" :get (conj common-interceptors `get-latest-country-date) :route-name :get-latest-by-country-by-date]
               ["/latest-country-timelines" :get (conj common-interceptors `get-latest-country-timeline) :route-name :get-latest-by-country-timeline]
               ["/search-variables" :get (conj common-interceptors `get-search-variables) :route-name :get-search-variables]
               ["/locations" :get (conj common-interceptors `get-locations) :route-name :get-location]
