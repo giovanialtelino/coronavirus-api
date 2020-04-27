@@ -19,19 +19,19 @@
                             (let [result (jdbc/query pool-conn [query args])]
                               result))))
 
-(defn- get-timeline-by-country [database country-code]
-  (into [] (drop 1 (pool-query database "SELECT last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+(defn- get-timeline-by-country [database country-code date]
+  (into [] (drop 1 (pool-query database ["SELECT last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
    FROM coronavirus
-   WHERE country_region = ?
+   WHERE country_region = ? AND last_update < ?
    GROUP BY last_update
-   ORDER BY last_update DESC" country-code))))
+   ORDER BY last_update DESC" country-code date]))))
 
-(defn- get-timeline-by-state [database state-code]
-  (into [] (drop 1 (pool-query database "SELECT last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+(defn- get-timeline-by-state [database state-code date]
+  (into [] (drop 1 (pool-query database ["SELECT last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
    FROM coronavirus
-   WHERE province_state = ?
+   WHERE province_state = ? AND last_update < ?
    GROUP BY last_update
-   ORDER BY last_update DESC" state-code))))
+   ORDER BY last_update DESC" state-code date]))))
 
 (defn get-last-update-date-github [database]
   (:max (nth (pool-query database ["SELECT MAX (file_date) FROM coronavirus"]) 0)))
@@ -110,6 +110,24 @@
     WHERE file_date = ?
     GROUP BY file_date" (utils/date-checker-parser date))))
 
+(defn check-timelines-province [database timeline date query-result]
+  (if (nil? timeline)
+    query-result
+    (loop [i 0
+           with-timeline query-result]
+      (if (< i (count with-timeline))
+        (recur (inc i) (assoc with-timeline i (merge (nth with-timeline i) {:timelines (get-timeline-by-state database (:province_state (nth query-result i)) date)})))
+        with-timeline))))
+
+(defn check-timelines-country [database timeline date query-result]
+  (if (nil? timeline)
+    query-result
+    (loop [i 0
+           with-timeline query-result]
+      (if (< i (count query-result))
+        (recur (inc i) (assoc with-timeline i (merge (nth with-timeline i) {:timelines (get-timeline-by-country database (:country_region (nth query-result i)) date)})))
+        with-timeline))))
+
 (defn get-locations [database country_region province_state timelines date]
   (async/go (check-if-update-needed database))
   (let [search-date (if (nil? date)
@@ -131,12 +149,10 @@
                         GROUP BY province_state, file_date, country_region
                         ORDER BY country_region ASC, province_state ASC"
         query-result (into [] (cond
-                                (and (not (nil? country_region)) (not (nil? province_state))) (pool-query database [country-state-query search-date province_state country_region])
-                                (not (nil? country_region)) (pool-query database [country-query search-date country_region])
-                                (not (nil? province_state)) (pool-query database [state-query search-date province_state])))]
-    (if (nil? timelines)
-      query-result
-      query-result)))
+                                (and (not (nil? country_region)) (not (nil? province_state))) (check-timelines-province database timelines search-date (into [] (pool-query database [country-state-query search-date province_state country_region])))
+                                (not (nil? country_region)) (check-timelines-country database timelines search-date (into [] (pool-query database [country-query search-date country_region])))
+                                (not (nil? province_state)) (check-timelines-province database timelines search-date (into [] (pool-query database [state-query search-date province_state])))))]
+    query-result))
 
 (defn get-latest-by-country [database]
   (async/go (check-if-update-needed database))
@@ -159,13 +175,7 @@
 (defn get-latest-by-country-with-timeline [database]
   (async/go (check-if-update-needed database))
   (let [without-timeline (into [] (get-latest-by-country database))]
-    (loop [i 0
-           map-with-timeline without-timeline]
-      (if (< i (count without-timeline))
-        (let [index-country (get-timeline-by-country database (:country_region (nth without-timeline i)))
-              merged-map (merge (nth without-timeline i) {:timelines index-country})]
-          (recur (inc i) (assoc map-with-timeline i merged-map)))
-        map-with-timeline))))
+    (check-timelines-country database "true" (jt/to-sql-date (jt/local-date)) without-timeline)))
 
 (defn- all-dates [database]
   (into [] (map :file_date (pool-query database "SELECT DISTINCT(file_date) FROM coronavirus ORDER BY file_date ASC"))))
