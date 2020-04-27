@@ -1806,3 +1806,266 @@ Caused by: java.lang.IllegalArgumentException: No implementation of method: :sin
 18:29:30.926 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@284c4f02{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
 18:29:30.926 [main] INFO  org.eclipse.jetty.server.Server  - Started @4905ms
 18:29:36.413 [qtp1155436032-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+21:51:41.713 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+21:51:42.091 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+21:51:42.145 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4257ms to org.eclipse.jetty.util.log.Slf4jLog
+21:51:42.368 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+21:51:42.407 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@fe08eaf{/,null,AVAILABLE}
+21:51:42.422 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@709d6de5{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+21:51:42.423 [main] INFO  org.eclipse.jetty.server.Server  - Started @4535ms
+21:52:42.434 [qtp1019207516-31] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:04:17.687 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:04:17.989 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:04:18.037 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4345ms to org.eclipse.jetty.util.log.Slf4jLog
+22:04:18.222 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:04:18.255 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:04:18.273 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:04:18.276 [main] INFO  org.eclipse.jetty.server.Server  - Started @4582ms
+22:04:33.527 [qtp340670126-27] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:05:37.178 [qtp340670126-22] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:06:15.428 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:06:15.744 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:06:15.793 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4331ms to org.eclipse.jetty.util.log.Slf4jLog
+22:06:15.990 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:06:16.025 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:06:16.043 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:06:16.044 [main] INFO  org.eclipse.jetty.server.Server  - Started @4581ms
+22:06:54.982 [qtp340670126-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:08:32.509 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:08:32.772 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:08:32.821 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4205ms to org.eclipse.jetty.util.log.Slf4jLog
+22:08:33.014 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:08:33.050 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:08:33.065 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:08:33.066 [main] INFO  org.eclipse.jetty.server.Server  - Started @4451ms
+22:08:59.913 [qtp340670126-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:09:54.039 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:09:54.302 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:09:54.345 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4347ms to org.eclipse.jetty.util.log.Slf4jLog
+22:09:54.556 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:09:54.602 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:09:54.616 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:09:54.616 [main] INFO  org.eclipse.jetty.server.Server  - Started @4617ms
+22:10:18.313 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:10:18.580 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:10:18.622 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4140ms to org.eclipse.jetty.util.log.Slf4jLog
+22:10:18.801 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:10:18.841 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:10:18.862 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:10:18.865 [main] INFO  org.eclipse.jetty.server.Server  - Started @4380ms
+22:10:40.170 [qtp340670126-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:11:41.280 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:11:41.559 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:11:41.609 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4114ms to org.eclipse.jetty.util.log.Slf4jLog
+22:11:41.792 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:11:41.825 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:11:41.839 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:11:41.840 [main] INFO  org.eclipse.jetty.server.Server  - Started @4345ms
+22:11:56.438 [qtp340670126-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:17:32.656 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:17:32.932 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:17:32.977 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4494ms to org.eclipse.jetty.util.log.Slf4jLog
+22:17:33.169 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:17:33.207 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:17:33.230 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:17:33.231 [main] INFO  org.eclipse.jetty.server.Server  - Started @4748ms
+22:17:35.636 [qtp340670126-25] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:18:42.878 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:18:43.152 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:18:43.195 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4087ms to org.eclipse.jetty.util.log.Slf4jLog
+22:18:43.389 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:18:43.420 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:18:43.435 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:18:43.435 [main] INFO  org.eclipse.jetty.server.Server  - Started @4327ms
+22:19:13.769 [qtp340670126-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:19:56.616 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:19:56.961 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:19:57.006 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4524ms to org.eclipse.jetty.util.log.Slf4jLog
+22:19:57.241 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:19:57.281 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:19:57.295 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:19:57.296 [main] INFO  org.eclipse.jetty.server.Server  - Started @4815ms
+22:20:21.067 [qtp340670126-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:21:42.439 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:21:42.718 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:21:42.768 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4100ms to org.eclipse.jetty.util.log.Slf4jLog
+22:21:42.972 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:21:43.006 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:21:43.024 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:21:43.024 [main] INFO  org.eclipse.jetty.server.Server  - Started @4357ms
+22:22:08.309 [qtp340670126-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:24:02.266 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:24:02.565 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:24:02.610 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4618ms to org.eclipse.jetty.util.log.Slf4jLog
+22:24:02.818 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:24:02.860 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:24:02.881 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:24:02.882 [main] INFO  org.eclipse.jetty.server.Server  - Started @4890ms
+22:24:51.249 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:24:51.511 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:24:51.559 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4215ms to org.eclipse.jetty.util.log.Slf4jLog
+22:24:51.752 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:24:51.791 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:24:51.812 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:24:51.812 [main] INFO  org.eclipse.jetty.server.Server  - Started @4469ms
+22:24:57.183 [qtp340670126-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:25:53.784 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:25:54.043 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:25:54.084 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4144ms to org.eclipse.jetty.util.log.Slf4jLog
+22:25:54.266 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:25:54.302 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:25:54.318 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:25:54.318 [main] INFO  org.eclipse.jetty.server.Server  - Started @4378ms
+22:25:58.087 [qtp340670126-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:26:43.187 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:26:43.477 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:26:43.527 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4441ms to org.eclipse.jetty.util.log.Slf4jLog
+22:26:43.720 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:26:43.755 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:26:43.773 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:26:43.776 [main] INFO  org.eclipse.jetty.server.Server  - Started @4690ms
+22:26:56.577 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:26:56.877 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:26:56.922 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4675ms to org.eclipse.jetty.util.log.Slf4jLog
+22:26:57.114 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:26:57.149 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:26:57.169 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:26:57.169 [main] INFO  org.eclipse.jetty.server.Server  - Started @4922ms
+22:26:58.985 [qtp340670126-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:27:41.131 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:27:41.415 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:27:41.454 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4148ms to org.eclipse.jetty.util.log.Slf4jLog
+22:27:41.623 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:27:41.657 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:27:41.670 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:27:41.670 [main] INFO  org.eclipse.jetty.server.Server  - Started @4364ms
+22:27:56.824 [qtp340670126-27] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:29:12.804 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:29:13.080 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:29:13.125 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4122ms to org.eclipse.jetty.util.log.Slf4jLog
+22:29:13.310 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:29:13.346 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:29:13.361 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:29:13.362 [main] INFO  org.eclipse.jetty.server.Server  - Started @4359ms
+22:29:19.161 [qtp340670126-27] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:44:28.603 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:44:28.886 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:44:28.930 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4214ms to org.eclipse.jetty.util.log.Slf4jLog
+22:44:29.110 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:44:29.149 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:44:29.165 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:44:29.168 [main] INFO  org.eclipse.jetty.server.Server  - Started @4449ms
+22:44:33.833 [qtp340670126-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:46:04.130 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:46:04.405 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:46:04.454 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4190ms to org.eclipse.jetty.util.log.Slf4jLog
+22:46:04.644 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:46:04.680 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:46:04.692 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:46:04.693 [main] INFO  org.eclipse.jetty.server.Server  - Started @4429ms
+22:46:19.801 [qtp340670126-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:47:17.519 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:47:17.797 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:47:17.843 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4082ms to org.eclipse.jetty.util.log.Slf4jLog
+22:47:18.031 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:47:18.069 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5d5574c7{/,null,AVAILABLE}
+22:47:18.086 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@1a4930cf{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:47:18.088 [main] INFO  org.eclipse.jetty.server.Server  - Started @4327ms
+22:47:20.775 [qtp340670126-22] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:54:28.333 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:54:28.603 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:54:28.645 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4202ms to org.eclipse.jetty.util.log.Slf4jLog
+22:54:28.823 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:54:28.864 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5a7a6d34{/,null,AVAILABLE}
+22:54:28.882 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3fd33f48{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:54:28.882 [main] INFO  org.eclipse.jetty.server.Server  - Started @4440ms
+22:57:57.535 [qtp610358919-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+22:58:46.397 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+22:58:46.674 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+22:58:46.715 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4319ms to org.eclipse.jetty.util.log.Slf4jLog
+22:58:46.886 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+22:58:46.927 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5a7a6d34{/,null,AVAILABLE}
+22:58:46.941 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3fd33f48{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+22:58:46.941 [main] INFO  org.eclipse.jetty.server.Server  - Started @4545ms
+23:00:07.644 [qtp610358919-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:01:41.896 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+23:01:42.188 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+23:01:42.236 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4300ms to org.eclipse.jetty.util.log.Slf4jLog
+23:01:42.442 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+23:01:42.479 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5a7a6d34{/,null,AVAILABLE}
+23:01:42.495 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3fd33f48{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+23:01:42.498 [main] INFO  org.eclipse.jetty.server.Server  - Started @4563ms
+23:06:14.947 [qtp610358919-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:08:20.423 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+23:08:20.841 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+23:08:20.923 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @5958ms to org.eclipse.jetty.util.log.Slf4jLog
+23:08:21.292 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+23:08:21.333 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5a7a6d34{/,null,AVAILABLE}
+23:08:21.368 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3fd33f48{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+23:08:21.368 [main] INFO  org.eclipse.jetty.server.Server  - Started @6403ms
+23:10:00.358 [qtp610358919-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:11:09.009 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+23:11:09.307 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+23:11:09.350 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4659ms to org.eclipse.jetty.util.log.Slf4jLog
+23:11:09.535 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+23:11:09.569 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5a7a6d34{/,null,AVAILABLE}
+23:11:09.586 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3fd33f48{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+23:11:09.588 [main] INFO  org.eclipse.jetty.server.Server  - Started @4897ms
+23:11:20.287 [qtp610358919-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:12:46.452 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+23:12:46.830 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+23:12:46.893 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @5632ms to org.eclipse.jetty.util.log.Slf4jLog
+23:12:47.133 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+23:12:47.197 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5a7a6d34{/,null,AVAILABLE}
+23:12:47.220 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3fd33f48{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+23:12:47.220 [main] INFO  org.eclipse.jetty.server.Server  - Started @5959ms
+23:12:59.081 [qtp610358919-24] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:14:05.276 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+23:14:05.616 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+23:14:05.660 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @5101ms to org.eclipse.jetty.util.log.Slf4jLog
+23:14:05.868 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+23:14:05.921 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5a7a6d34{/,null,AVAILABLE}
+23:14:05.937 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3fd33f48{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+23:14:05.941 [main] INFO  org.eclipse.jetty.server.Server  - Started @5382ms
+23:14:35.460 [qtp610358919-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:15:40.910 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+23:15:41.223 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+23:15:41.278 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @5091ms to org.eclipse.jetty.util.log.Slf4jLog
+23:15:41.510 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+23:15:41.556 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5a7a6d34{/,null,AVAILABLE}
+23:15:41.577 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3fd33f48{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+23:15:41.577 [main] INFO  org.eclipse.jetty.server.Server  - Started @5390ms
+23:16:10.273 [qtp610358919-28] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:16:52.141 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+23:16:52.501 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+23:16:52.550 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4997ms to org.eclipse.jetty.util.log.Slf4jLog
+23:16:52.802 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+23:16:52.845 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5a7a6d34{/,null,AVAILABLE}
+23:16:52.858 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3fd33f48{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+23:16:52.859 [main] INFO  org.eclipse.jetty.server.Server  - Started @5306ms
+23:17:07.361 [qtp610358919-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:22:00.375 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+23:22:00.628 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+23:22:00.675 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4085ms to org.eclipse.jetty.util.log.Slf4jLog
+23:22:00.866 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+23:22:00.903 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@5a7a6d34{/,null,AVAILABLE}
+23:22:00.919 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3fd33f48{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+23:22:00.919 [main] INFO  org.eclipse.jetty.server.Server  - Started @4330ms
+23:22:37.682 [qtp610358919-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:28:04.201 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Starting...
+23:28:04.491 [main] INFO  com.zaxxer.hikari.HikariDataSource  - corona - Start completed.
+23:28:04.532 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4271ms to org.eclipse.jetty.util.log.Slf4jLog
+23:28:04.706 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 11.0.7+10-post-Ubuntu-2ubuntu219.10
+23:28:04.740 [main] INFO  o.e.j.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@223cbf0d{/,null,AVAILABLE}
+23:28:04.753 [main] INFO  o.e.jetty.server.AbstractConnector  - Started ServerConnector@3d132bb6{HTTP/1.1,[http/1.1, h2c]}{localhost:8080}
+23:28:04.753 [main] INFO  org.eclipse.jetty.server.Server  - Started @4492ms
+23:28:46.767 [qtp1509114479-27] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:29:38.327 [qtp1509114479-22] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:29:47.334 [qtp1509114479-25] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:29:49.771 [qtp1509114479-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:29:51.483 [qtp1509114479-25] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:29:54.120 [qtp1509114479-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:29:55.282 [qtp1509114479-25] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:29:56.086 [qtp1509114479-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:29:56.837 [qtp1509114479-25] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}
+23:29:57.557 [qtp1509114479-29] INFO  io.pedestal.http  - {:msg "GET /latest", :line 80}

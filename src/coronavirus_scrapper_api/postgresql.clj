@@ -34,12 +34,12 @@
    ORDER BY last_update DESC" state-code))))
 
 (defn get-last-update-date-github [database]
-  (:max (nth (pool-query database ["SELECT MAX (last_update) FROM coronavirus"]) 0)))
+  (:max (nth (pool-query database ["SELECT MAX (file_date) FROM coronavirus"]) 0)))
 
 (defn- update-last-update [database]
   (let [last-date (get-last-update-date-github database)
         date-to-atom (if (nil? last-date)
-                       (jt/local-date-time 2020 03 22)
+                       (jt/local-date-time 2020 01 22)
                        (jt/local-date-time last-date))]
     (reset! last-update date-to-atom)
     @last-update))
@@ -56,32 +56,33 @@
     (catch Exception e
       nil)))
 
-(defn post-to-database [database json]
-
-  (let [point-vector (try-to-get-point [(:lat json) (:long json)])]
+(defn post-to-database [database date json]
+  (let [point-vector (try-to-get-point [(:lat json) (:long json)])
+        parsed-date (utils/github-date-parser (name date))]
     (jdbc/insert! database :coronavirus {:admin2         (:admin2 json)
                                          :fips           (:fips json)
                                          :province_state (:province_state json)
                                          :country_region (:country_region json)
                                          :last_update    (:last_update json)
                                          :location       point-vector
+                                         :file_date      parsed-date
                                          :recovered      (:recovered json)
                                          :confirmed      (:confirmed json)
                                          :deaths         (:deaths json)
                                          :active         (:active json)
                                          :tested         (:tested json)})))
 
-(defn post-data [database json]
-  (let [json-count (count json)]
+(defn post-data [database json-map]
+  (let [json-count (count json-map)]
     (loop [i 0]
       (if (> json-count i)
-        (loop [f 0]
-          (if (> (count (nth json i)) f)
-            (do
-              (if (= (:country_region (nth (nth json i) f)) "Afghanistan")
-                (prn (nth (nth json i) f)))
-              (post-to-database database (nth (nth json i) f))
-              (recur (inc f))))))
+        (let [date (key (first (nth json-map i)))
+              json (date (nth json-map i))]
+          (loop [f 0]
+            (if (> (count json) f)
+              (do
+                (post-to-database database date (nth json f))
+                (recur (inc f)))))))
       (recur (inc i)))))
 
 (defn- check-if-update-needed [database]
@@ -97,37 +98,37 @@
 
 (defn get-latest [database]
   (async/go (check-if-update-needed database))
-  (first (pool-query database "SELECT last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+  (first (pool-query database "SELECT file_date, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
     FROM coronavirus
-    WHERE last_update=?
-    GROUP BY last_update" (get-last-update-date-github database))))
+    WHERE file_date = ?
+    GROUP BY file_date" (get-last-update-date-github database))))
 
 (defn get-all-by-date [database date]
   (async/go (check-if-update-needed database))
-  (first (pool-query database "SELECT last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+  (first (pool-query database "SELECT file_date, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
     FROM coronavirus
-    WHERE last_update=?
-    GROUP BY last_update" (utils/date-checker-parser date))))
+    WHERE file_date = ?
+    GROUP BY file_date" (utils/date-checker-parser date))))
 
 (defn get-locations [database country_region province_state timelines date]
   (async/go (check-if-update-needed database))
   (let [search-date (if (nil? date)
                       (get-last-update-date-github database)
                       (utils/date-checker-parser date))
-        country-query "SELECT country_region, last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+        country-query "SELECT country_region, file_date, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
                         FROM coronavirus
-                        WHERE last_update = ? AND country_region = ?
-                        GROUP BY country_region, last_update
+                        WHERE file_date = ? AND country_region = ?
+                        GROUP BY country_region, file_date
                         ORDER BY country_region ASC"
-        state-query "SELECT province_state, last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+        state-query "SELECT province_state, file_date, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
                         FROM coronavirus
-                        WHERE last_update = ? AND province_state = ?
-                        GROUP BY province_state, last_update
+                        WHERE file_date = ? AND province_state = ?
+                        GROUP BY province_state, file_date
                         ORDER BY province_state ASC"
-        country-state-query "SELECT province_state, country_region, last_update, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
+        country-state-query "SELECT province_state, country_region, file_date, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested, SUM(active) as active
                         FROM coronavirus
-                        WHERE last_update = ? AND province_state = ? AND country_region = ?
-                        GROUP BY province_state, last_update, country_region
+                        WHERE file_date = ? AND province_state = ? AND country_region = ?
+                        GROUP BY province_state, file_date, country_region
                         ORDER BY country_region ASC, province_state ASC"
         query-result (into [] (cond
                                 (and (not (nil? country_region)) (not (nil? province_state))) (pool-query database [country-state-query search-date province_state country_region])
@@ -139,20 +140,20 @@
 
 (defn get-latest-by-country [database]
   (async/go (check-if-update-needed database))
-  (pool-query database "SELECT last_update, country_region, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested,
+  (pool-query database "SELECT file_date, country_region, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested,
                         SUM(active) as active
                         FROM coronavirus
-                        WHERE last_update =?
-                        GROUP BY country_region, last_update
+                        WHERE file_date =?
+                        GROUP BY country_region, file_date
                         ORDER BY country_region DESC" (get-last-update-date-github database)))
 
 (defn get-latest-by-country-date [database date]
   (async/go (check-if-update-needed database))
-  (pool-query database "SELECT last_update, country_region, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested,
+  (pool-query database "SELECT file_date, country_region, SUM(confirmed) AS confirmed, SUM(deaths) AS deaths, SUM(recovered) AS recovered, SUM(tested) AS tested,
                         SUM(active) as active
                         FROM coronavirus
-                        WHERE last_update =?
-                        GROUP BY country_region, last_update
+                        WHERE file_date =?
+                        GROUP BY country_region, file_date
                         ORDER BY country_region DESC" (utils/date-checker-parser date)))
 
 (defn get-latest-by-country-with-timeline [database]
@@ -167,13 +168,13 @@
         map-with-timeline))))
 
 (defn- all-dates [database]
-  (into [] (map :last_update (pool-query database "SELECT DISTINCT(last_update) FROM coronavirus ORDER BY last_update ASC"))))
+  (into [] (map :file_date (pool-query database "SELECT DISTINCT(file_date) FROM coronavirus ORDER BY file_date ASC"))))
 
 (defn- all-countries [database]
-  (into [] (map :country_region (pool-query database "SELECT DISTINCT (country_region) FROM coronavirus ORDER BY country_region ASC"))))
+  (into [] (map :country_region (pool-query database "SELECT DISTINCT(country_region) FROM coronavirus ORDER BY country_region ASC"))))
 
 (defn- all-states [database]
-  (into [] (map :province_state (pool-query database "SELECT DISTINCT (province_state) FROM coronavirus ORDER BY province_state ASC"))))
+  (into [] (map :province_state (pool-query database "SELECT DISTINCT(province_state) FROM coronavirus ORDER BY province_state ASC"))))
 
 (defn get-search-variables [database]
   {:dates          (all-dates database)
@@ -184,8 +185,8 @@
   (if (jt/after? (jt/local-date-time date) (update-last-update database))
     "Requested date is greater than the last update in the database. Nothing to do."
     (do
-      (jdbc/delete! database :coronavirus ["last_update >= ?" date])
-      (reset! last-update nil)
+      (jdbc/delete! database :coronavirus ["file_date >= ?" date])
+      (reset! last-update (jt/local-date-time date))
       (async/go (check-if-update-needed database))
       (str "Data deleted since " date ", updating the database again."))))
 

@@ -13,17 +13,15 @@
 ;  x) ) )
 
 ;errr 1 hour to find butlast....
+(defn github-url-parser [format-date]
+  (str "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/" format-date ".csv"))
+
 (defn check-last-date [date-vector]
   (try
-    (slurp (last date-vector))
+    (slurp (last (github-url-parser date-vector)))
     date-vector
     (catch Exception e
       (butlast date-vector))))
-
-(defn github-url [date]
-  (str "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/" (jt/format "MM-dd-YYYY" date) ".csv"))
-
-; (database/get-last-update-date database)
 
 (defn get-date-vector-until-today [last-update]
   (let [today (jt/local-date-time)]
@@ -31,7 +29,7 @@
            missing-dates []]
       (if (jt/after? current-date today)
         missing-dates
-        (recur (jt/plus current-date (jt/days 1)) (into missing-dates [current-date]))))))
+        (recur (jt/plus current-date (jt/days 1)) (into missing-dates [(jt/format "MM-dd-YYYY" current-date)]))))))
 
 (defn- find-correct-key [k-name]
   (let [k (cstr/trim (str k-name))
@@ -51,8 +49,7 @@
                  "FIPS" :fips
                  "Admin2" :admin2
                  "Tested" :tested
-                 (keyword k)
-                 )]
+                 (keyword k))]
     (if (nil? tested)
       (prn (str "PARSED INTO NIL" k)))
     [tested]))
@@ -122,9 +119,14 @@
         (recur (conj csv-mapped (add-keys cleaned-k (nth without-keywords i))) (inc i))
         csv-mapped))))
 
+(defn github-url [date]
+  {(keyword date) (-> date
+                      github-url-parser
+                      slurp
+                      csv/read-csv
+                      csv-to-clojure-map)})
+
 (defn slurp-date-vector [last-update]
   (let [dates-vector (get-date-vector-until-today last-update)
-        every-csv-link (check-last-date (map github-url dates-vector))
-        every-slurp (map slurp every-csv-link)
-        parsed-to-csv (map csv/read-csv every-slurp)]
-    (map csv-to-clojure-map parsed-to-csv)))
+        mapped-values (into [] (map github-url (check-last-date dates-vector)))]
+    mapped-values))

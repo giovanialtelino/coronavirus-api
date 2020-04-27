@@ -279,5 +279,6 @@ create TABLE coronavirus
     confirmed INTEGER,
     deaths INTEGER,
     active integer,
-    tested INTEGER
+    tested INTEGER,
+    file_date DATE
  );

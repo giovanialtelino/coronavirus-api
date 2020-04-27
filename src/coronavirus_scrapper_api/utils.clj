@@ -54,10 +54,17 @@
 (defn date-checker-parser [date]
   (let [splited (cstr/split date #"-")
         year (if (= 4 (count (first splited)))
-              (Integer/parseInt (first splited))
-              (throw "invalid year, must use four digits"))
+               (Integer/parseInt (first splited))
+               (throw "invalid year, must use four digits"))
         month (Integer/parseInt (second splited))
         day (Integer/parseInt (last splited))]
+    (jt/to-sql-date (jt/local-date year month day))))
+
+(defn github-date-parser [date]
+  (let [splited (cstr/split date #"-")
+        year (Integer/parseInt (last splited))
+        month (Integer/parseInt (first splited))
+        day (Integer/parseInt (second splited))]
     (jt/to-sql-date (jt/local-date year month day))))
 
 ;;;---------------------------------
