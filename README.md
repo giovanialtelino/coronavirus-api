@@ -1,4 +1,8 @@
+
 # coronavirus-scrapper-api
+
+## OBS
+Looks like no one was using the public API anymore, so I removed it from my server.
 
 This API get data from the [JHU](https://github.com/CSSEGISandData/COVID-19) project, using their [daily update](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports).  
 This project process their data, and save in a PostgreSQL database for posterior use, which can be required as JSON.  
